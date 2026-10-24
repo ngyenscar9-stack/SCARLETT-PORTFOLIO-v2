@@ -1,31 +1,21 @@
-SCARLETT PORTFOLIO V3
+SCARLETT PORTFOLIO V4
+=====================
 
-WHAT CHANGED
-- Default mode is DARK every first visit unless the viewer previously selected Light.
-- Light mode uses warm ivory + white text on red panels for stronger contrast.
-- Landing page redesigned as an original editorial scrapbook / red fashion-zine composition.
-- Montserrat body type; editorial serif display type retained.
-- All four Work cards now share the same size. Lịm is the same height/weight as GOM VỊ.
-- Project cards open detailed case-study pages.
-- Project PDFs are embedded inside each case-study page and also have an Open in New Tab button.
-- Project evidence was curated from the uploaded decks/reports instead of dumping every slide.
-- Lịm video is embedded on its project page.
-- About section uses LinkedIn/profile material but is rewritten for portfolio use.
-- Experience is intentionally text-first until more SAT/event images are added.
+Main page: index.html
 
-TO ADD YOUR OWN HERO PHOTO LATER
-The current landing uses project work instead of a personal photo.
-You can add a portrait later without redesigning the page.
+What changed from V3:
+- Landing now leads with Scarlett's real portrait instead of project thumbnails.
+- Removed the old custom SVG flower / bow / wax decorations from the landing composition.
+- New scrapbook decorations were cropped from the visual references supplied by Scarlett.
+- Hero copy is shorter and recruiter-first.
+- Hero proof points updated to 1 HD + 5 Distinctions, Top 3 / 6 industry pitch, and 20+ communication materials.
+- About section now uses a personal reading portrait instead of a project-image collage.
+- Added EDIT-CONTENT.txt for simple self-editing instructions.
 
-CV
-Put your final CV at:
-documents/scarlett-cv.pdf
+To publish:
+1. Unzip this folder.
+2. Copy ALL contents inside it into the local GitHub repository root.
+3. GitHub Desktop -> Commit to main -> Push origin.
+4. GitHub Pages should remain main / (root).
 
-DEPLOY
-This is a static site and can be deployed directly to Netlify, GitHub Pages, Cloudflare Pages or similar.
-
-IMPORTANT
-Open index.html via a local server for the most reliable PDF iframe behaviour.
-Example:
-python -m http.server 8000
-Then open http://localhost:8000
+For easiest content edits, read EDIT-CONTENT.txt.
