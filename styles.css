@@ -247,7 +247,7 @@ footer{padding:24px 0 34px;color:#737373;font-size:8px;text-transform:uppercase;
 .reveal.visible{opacity:1;transform:none}
 
 /* LIGHT MODE */
-body[data-theme='light']{background:#efe8df;color:#15110f}
+body[data-theme='light']{background:#efe8df;color:#15110f;--line:rgba(83,61,43,.28)}
 body[data-theme='light'] nav{background:rgba(239,232,223,.92);border-color:rgba(0,0,0,.16)}
 body[data-theme='light'] .theme-toggle{border-color:rgba(0,0,0,.28)}
 body[data-theme='light'] .theme-toggle .moon{opacity:0;transform:translateY(-10px)}
