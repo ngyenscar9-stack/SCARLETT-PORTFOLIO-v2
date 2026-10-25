@@ -1,56 +1,46 @@
-SCARLETT PORTFOLIO V4 — CÁCH SỬA CONTENT (KHÔNG CẦN BIẾT CODE)
-==============================================================
+SCARLETT PORTFOLIO V5 — QUICK EDIT GUIDE
 
-1) FILE M CHỦ YẾU CẦN MỞ: index.html
-Mở bằng VS Code hoặc TextEdit. Dùng Cmd+F (Mac) / Ctrl+F (Windows) để tìm đúng câu hiện tại rồi thay chữ.
+1) HOMEPAGE TEXT
+Open: index.html
+Use Cmd+F to find the exact sentence you see on the website.
+Edit ONLY the text between the HTML tags, then Cmd+S.
 
-LANDING PAGE
-- Tìm: "Digital Marketing Student · RMIT Vietnam"
-  -> dòng nhỏ phía trên tên.
-- Tìm: "Scarlett" / "Nguyen."
-  -> tên lớn ở hero.
-- Tìm: "Strategy · Content · Analytics · Engagement"
-  -> dòng positioning.
-- Tìm: "I turn audience insight into campaigns"
-  -> câu giới thiệu ngắn ở landing.
-- Tìm: "1 HD + 5 D"
-  -> số liệu học tập dưới hero.
+2) HOMEPAGE ORDER
+Current order is:
+Landing → About → How I Work → Selected Work → Experience → Recognition → Contact
 
-ABOUT
-- Tìm: "I’m a Digital Marketing student"
-  -> 3 đoạn giới thiệu About.
-- Tìm: "Currently studying"
-  -> các ô thông tin nhỏ.
+3) LỊM DONUTS PAGE
+Open: projects/lim-donuts.html
+All Lịm images live in:
+assets/projects/lim/
 
-SELECTED WORK
-- Tìm lần lượt: GOM VỊ / RU — Rhythm of Rest / Lịm Donuts / HopeBox
-- Chỉ sửa chữ nằm giữa các thẻ <h3>...</h3> hoặc <p>...</p>. Không xóa dấu < >.
+Main image names:
+- key-visual.png = blue Donut Overthink It poster
+- campaign-identity.png = cream campaign identity slide
+- leaflet.png
+- add-yours.png
+- loyalty-board.png
+- banner-prizes.png
+- donuts-stickers.jpg
+- booth-wide.jpg
+- team-booth.jpg
+- vote-sheet.jpg
+- grade.png
+- peoples-choice-award.png
+- interactive-award.png
+- awards-photo.jpg
 
-EXPERIENCE
-- Tìm tên role: "RMIT Student Ambassador Team", "Workshop Team Leader", v.v.
-- Có thể thay câu mô tả ngay bên dưới.
+TO REPLACE AN IMAGE WITHOUT TOUCHING CODE:
+- Prepare your new image.
+- Give it EXACTLY the same filename as the image you want to replace.
+- Replace that file inside assets/projects/lim/.
+- Commit + Push in GitHub Desktop.
 
-2) THAY ẢNH LANDING
-File ảnh hiện tại:
-assets/personal/scarlett-hero.jpg
+4) TO ADD A NEW IMAGE
+This DOES require one small HTML line. Easiest method:
+- Put the image in assets/projects/lim/
+- Send me the filename + where you want it, and I can give you the exact one-line code or update the page for you.
 
-Cách dễ nhất: thay bằng ảnh mới NHƯNG GIỮ NGUYÊN TÊN scarlett-hero.jpg.
-Web tự dùng ảnh mới, không cần sửa HTML.
-
-Ảnh About:
-assets/personal/scarlett-about.jpg
-
-3) STICKERS Ở LANDING
-Các sticker đều lấy từ ảnh m gửi:
-assets/decor-user/burgundy-flower.png
-assets/decor-user/wax-rose.png
-assets/decor-user/cream-ribbon.png
-assets/decor-user/lip-print.png
-assets/decor-user/cream-butterfly.png
-
-4) SAU KHI SỬA
-GitHub Desktop -> Changes -> Summary -> Commit to main -> Push origin.
-Không cần upload lại từng file trên website GitHub.
-
-5) QUAN TRỌNG
-Nếu muốn đổi layout, thêm project page, animation, mobile layout hoặc thêm section mới: gửi source hiện tại cho GPT sửa để tránh làm vỡ CSS/link.
+5) GITHUB UPDATE
+After any edit:
+GitHub Desktop → Changes → Summary (e.g. "Update Lịm project") → Commit to main → Push origin.

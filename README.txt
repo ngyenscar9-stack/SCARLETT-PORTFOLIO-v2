@@ -1,21 +1,9 @@
-SCARLETT PORTFOLIO V4
-=====================
+SCARLETT PORTFOLIO V5
 
-Main page: index.html
+Main changes from V4:
+- About moved directly after the landing page.
+- Homepage navigation now follows About → Work → Experience → Recognition → Contact.
+- Lịm Donuts rebuilt as a visual case study using Scarlett's real campaign assets, booth photos, grade proof and award certificates.
+- Lịm page now embeds both the campaign presentation and written submission.
 
-What changed from V3:
-- Landing now leads with Scarlett's real portrait instead of project thumbnails.
-- Removed the old custom SVG flower / bow / wax decorations from the landing composition.
-- New scrapbook decorations were cropped from the visual references supplied by Scarlett.
-- Hero copy is shorter and recruiter-first.
-- Hero proof points updated to 1 HD + 5 Distinctions, Top 3 / 6 industry pitch, and 20+ communication materials.
-- About section now uses a personal reading portrait instead of a project-image collage.
-- Added EDIT-CONTENT.txt for simple self-editing instructions.
-
-To publish:
-1. Unzip this folder.
-2. Copy ALL contents inside it into the local GitHub repository root.
-3. GitHub Desktop -> Commit to main -> Push origin.
-4. GitHub Pages should remain main / (root).
-
-For easiest content edits, read EDIT-CONTENT.txt.
+For GitHub Pages, upload ALL contents of this folder to the repository root.

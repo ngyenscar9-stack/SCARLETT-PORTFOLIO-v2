@@ -1,0 +1,73 @@
+SCARLETT PORTFOLIO — HOW TO UPDATE WITHOUT KNOWING CODE
+
+A. UPDATE THE NEW V5 TO GITHUB
+1. Unzip scarlett_portfolio_v5.zip on your Mac.
+2. Open GitHub Desktop.
+3. Click Repository → Show in Finder.
+4. Finder opens the EXACT local folder connected to your GitHub repo.
+5. Open the unzipped scarlett_portfolio_v5 folder in another Finder window.
+6. Press Cmd+A INSIDE scarlett_portfolio_v5.
+7. Drag/copy ALL CONTENTS into the GitHub repo folder opened in step 4.
+8. Choose Replace when macOS asks about existing files/folders.
+9. Return to GitHub Desktop.
+10. In Changes, type Summary: Update portfolio V5
+11. Click Commit to main.
+12. Click Push origin.
+13. Open your GitHub Pages website and hard refresh: Cmd+Shift+R.
+
+IMPORTANT:
+Do NOT put the whole scarlett_portfolio_v5 folder inside the repo.
+Copy the CONTENTS inside it so index.html stays at the top/root level.
+
+B. EDIT TEXT YOURSELF
+1. GitHub Desktop → Repository → Show in Finder.
+2. Open index.html (homepage) or projects/lim-donuts.html (Lịm page) in VS Code.
+3. On the website, copy the sentence you want to change.
+4. In VS Code press Cmd+F and paste that sentence.
+5. Change ONLY the visible words. Do not delete the < > tags around them.
+6. Cmd+S.
+7. GitHub Desktop → Commit to main → Push origin.
+
+C. REPLACE AN EXISTING LỊM IMAGE — NO CODE NEEDED
+All Lịm images are here:
+assets/projects/lim/
+
+Example: replace the hero poster
+1. Prepare your replacement image.
+2. Rename it EXACTLY: key-visual.png
+3. Replace assets/projects/lim/key-visual.png
+4. Commit + Push.
+
+Other useful filenames:
+campaign-identity.png
+leaflet.png
+add-yours.png
+loyalty-board.png
+banner-prizes.png
+donuts-stickers.jpg
+booth-wide.jpg
+team-booth.jpg
+vote-sheet.jpg
+grade.png
+peoples-choice-award.png
+interactive-award.png
+awards-photo.jpg
+
+D. ADD A COMPLETELY NEW IMAGE
+Adding a new image needs a small HTML block.
+Safest workflow:
+1. Put the new image in assets/projects/lim/
+2. Give it a simple filename, e.g. team-pitch.jpg
+3. Send me the filename + tell me where you want it on the page.
+4. I can give you the exact paste block OR update the source for you.
+
+E. WHICH FILE CONTROLS WHAT?
+Homepage: index.html
+All design/style: styles.css
+Lịm page: projects/lim-donuts.html
+GOM VỊ: projects/gom-vi.html
+RU: projects/ru.html
+HopeBox: projects/hopebox.html
+Awards pages: recognition/
+Images: assets/
+PDF/video: documents/
