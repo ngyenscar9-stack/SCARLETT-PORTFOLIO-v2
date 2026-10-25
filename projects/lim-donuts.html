@@ -2,84 +2,54 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Donut Overthink It — Lịm Donuts integrated marketing campaign by Scarlett Nguyen">
 <title>Donut Overthink It — Scarlett Nguyen</title><link rel="stylesheet" href="../styles.css"><style>
-/* Lịm case-study polish: compact galleries, careful crops, lighter section labels */
-.detail-section .eyebrow{
-  font-size:14px !important;
-  letter-spacing:.16em !important;
-  font-weight:400 !important;
-  line-height:1.35;
-  margin-bottom:12px;
-}
-/* Keep the main section headings at the site's original scale. */
-.lim-touch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start;}
-.lim-touch-grid .lim-large,.lim-touch-grid .lim-wide{grid-column:auto;}
-.lim-media,.lim-proof,.lim-booth,.lim-team,.timelapse-card{
-  background:rgba(255,255,255,.025);
-  border:1px solid rgba(255,255,255,.10);
-  overflow:hidden;
-}
-.lim-media img{
-  width:100%;
-  max-height:330px;
-  height:auto !important;
-  display:block;
-  object-fit:contain !important;
-  margin:0 auto;
-}
-.lim-media figcaption,.lim-proof figcaption,.lim-booth figcaption,.lim-team figcaption,.timelapse-card figcaption{padding:12px 14px 14px;}
-.lim-media figcaption strong,.lim-proof figcaption strong,.timelapse-card figcaption strong{display:block;margin-bottom:3px;font-size:1rem;}
+/* Lịm case — compact, fixed editorial layout */
+#idea .eyebrow,#role .eyebrow,#touchpoints .eyebrow,#activation .eyebrow,#results .eyebrow{font-size:15px!important;font-weight:400!important;letter-spacing:.16em!important;line-height:1.2!important;margin-bottom:14px!important;}
+#idea h2,#role h2,#touchpoints h2,#activation h2,#results h2{font-size:clamp(2.1rem,4vw,3.55rem)!important;line-height:.98!important;}
 
-.lim-activation-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:18px;align-items:start;}
-.lim-activation-side{display:grid;gap:18px;align-content:start;}
-.lim-booth img{
-  width:100%;
-  max-height:500px;
-  height:auto !important;
-  display:block;
-  object-fit:contain !important;
-  margin:0 auto;
-}
-.lim-team img{
-  width:100%;
-  max-height:260px;
-  height:auto !important;
-  display:block;
-  object-fit:contain !important;
-  margin:0 auto;
-}
-.timelapse-card video{
-  width:auto;
-  max-width:100%;
-  height:auto;
-  max-height:300px;
-  display:block;
-  margin:0 auto;
-  background:#000;
-}
+/* ---------- TOUCHPOINTS ---------- */
+#touchpoints .scar-touch-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px!important;align-items:stretch!important;margin-top:32px!important;}
+#touchpoints .scar-touch-card{margin:0!important;border:1px solid rgba(255,255,255,.11)!important;background:rgba(255,255,255,.025)!important;display:flex!important;flex-direction:column!important;min-width:0!important;overflow:hidden!important;}
+#touchpoints .scar-touch-media{height:300px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:16px!important;background:#f4f0e4!important;overflow:hidden!important;}
+#touchpoints .scar-touch-media img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;}
+#touchpoints .scar-touch-card figcaption{padding:15px 16px 17px!important;min-height:76px!important;}
+#touchpoints .scar-touch-card figcaption strong{display:block!important;font-size:1rem!important;margin-bottom:4px!important;}
+#touchpoints .scar-touch-card figcaption span{font-size:.78rem!important;line-height:1.45!important;opacity:.74!important;}
 
-.lim-proof-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;align-items:start;}
-.lim-proof.vote,.lim-proof.grade,.lim-proof.awards{grid-column:span 2;}
-.lim-proof.cert{grid-column:span 3;}
-.lim-proof img{
-  width:100%;
-  height:auto !important;
-  max-height:300px;
-  object-fit:contain !important;
-  display:block;
-  margin:0 auto;
-}
-.lim-proof.awards img{max-height:250px;}
+/* ---------- LIVE ACTIVATION ---------- */
+#activation .scar-activation-grid{display:grid!important;grid-template-columns:minmax(0,2fr) minmax(260px,1fr)!important;gap:20px!important;align-items:stretch!important;margin-top:34px!important;}
+#activation figure{margin:0!important;}
+#activation .scar-booth-card,#activation .scar-side-card{border:1px solid rgba(255,255,255,.11)!important;background:rgba(255,255,255,.025)!important;overflow:hidden!important;}
+#activation .scar-booth-media{height:520px!important;background:#0b0b0b!important;overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+#activation .scar-booth-media img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:left center!important;display:block!important;}
+#activation .scar-side-stack{display:grid!important;grid-template-rows:1fr 1fr!important;gap:20px!important;min-width:0!important;}
+#activation .scar-side-media{height:224px!important;background:#0b0b0b!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;}
+#activation .scar-side-media img,#activation .scar-side-media video{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;display:block!important;background:#0b0b0b!important;}
+#activation figcaption{padding:12px 14px 14px!important;font-size:.72rem!important;line-height:1.35!important;letter-spacing:.04em!important;}
+#activation figcaption strong{display:block!important;font-size:.92rem!important;letter-spacing:0!important;margin-bottom:4px!important;}
+
+/* ---------- RESULTS ---------- */
+#results .scar-proof-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important;margin-top:32px!important;align-items:stretch!important;}
+#results .scar-proof-card{margin:0!important;border:1px solid rgba(255,255,255,.11)!important;background:rgba(255,255,255,.025)!important;overflow:hidden!important;display:flex!important;flex-direction:column!important;}
+#results .scar-proof-media{height:300px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px!important;background:#f1eee7!important;overflow:hidden!important;}
+#results .scar-proof-media img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;}
+#results .scar-proof-card figcaption{padding:13px 15px 15px!important;min-height:64px!important;}
+#results .scar-proof-card figcaption strong{display:block!important;font-size:1rem!important;margin-bottom:3px!important;}
+#results .scar-proof-card figcaption span{font-size:.76rem!important;line-height:1.4!important;opacity:.72!important;}
+#results .scar-team-strip{grid-column:1/-1!important;display:grid!important;grid-template-columns:320px 1fr!important;min-height:180px!important;max-height:220px!important;border:1px solid rgba(255,255,255,.11)!important;background:rgba(255,255,255,.025)!important;overflow:hidden!important;}
+#results .scar-team-strip .scar-team-media{height:220px!important;background:#0b0b0b!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;}
+#results .scar-team-strip img{width:100%!important;height:100%!important;object-fit:contain!important;display:block!important;}
+#results .scar-team-copy{padding:24px 28px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;}
+#results .scar-team-copy strong{font-size:1.15rem!important;margin-bottom:7px!important;}
+#results .scar-team-copy span{font-size:.82rem!important;line-height:1.5!important;opacity:.72!important;max-width:44ch!important;}
 
 @media (max-width:900px){
-  .lim-touch-grid,.lim-activation-grid{grid-template-columns:1fr;}
-  .lim-proof-grid{grid-template-columns:1fr 1fr;}
-  .lim-proof.vote,.lim-proof.grade,.lim-proof.awards,.lim-proof.cert{grid-column:auto;}
-  .lim-media img,.lim-booth img,.lim-team img,.lim-proof img{max-height:none;}
-  .timelapse-card video{max-height:420px;}
-}
-@media (max-width:600px){
-  .lim-touch-grid,.lim-proof-grid{grid-template-columns:1fr;}
-  .detail-section .eyebrow{font-size:13px !important;}
+  #touchpoints .scar-touch-grid,#results .scar-proof-grid,#activation .scar-activation-grid{grid-template-columns:1fr!important;}
+  #touchpoints .scar-touch-media,#results .scar-proof-media{height:260px!important;}
+  #activation .scar-booth-media{height:360px!important;}
+  #activation .scar-side-stack{grid-template-rows:auto auto!important;}
+  #activation .scar-side-media{height:280px!important;}
+  #results .scar-team-strip{grid-template-columns:1fr!important;max-height:none!important;}
+  #results .scar-team-strip .scar-team-media{height:260px!important;}
 }
 </style></head><body><div class="noise"></div><nav><div class="wrap nav">
 <a class="brand" href="../index.html#top">SCARLETT<b>°</b></a>
@@ -94,12 +64,30 @@
 
 <section class="detail-section" id="role"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">02 / My Role</div><h2>From strategy<br>to <span class="red">execution.</span></h2></div><div><p>This was a two-person project. I contributed across campaign planning, strategic direction, key-message development, content ideation, creative concept development, video production, exhibition presentation and the formal written submission.</p><div class="role-list"><div class="role-chip">Campaign planning</div><div class="role-chip">Key messaging</div><div class="role-chip">Content ideation</div><div class="role-chip">Creative concept</div><div class="role-chip">Video production</div><div class="role-chip">Exhibition delivery</div></div></div></div></div></section>
 
-<section class="detail-section" id="touchpoints"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">03 / Campaign Touchpoints</div><h2>One idea,<br>multiple <span class="red">moments.</span></h2></div><div><p>The campaign was translated into a set of online and offline touchpoints designed to simplify choice, encourage participation and keep the visual identity recognisable across the customer journey.</p></div></div>
-<div class="lim-touch-grid reveal"><figure class="lim-media lim-large"><img src="../assets/projects/lim/leaflet.png" alt="Lịm Donuts campaign leaflet"><figcaption><strong>Leaflet</strong><span>Campaign introduction, brand context and QR-linked social channels.</span></figcaption></figure><figure class="lim-media"><img src="../assets/projects/lim/add-yours.png" alt="Instagram Add Yours Valentine template"><figcaption><strong>Instagram “Add Yours”</strong><span>A Valentine-themed UGC prompt designed for tagging and organic sharing.</span></figcaption></figure><figure class="lim-media"><img src="../assets/projects/lim/loyalty-board.png" alt="Loyalty card and Today's Special combo board"><figcaption><strong>Sales promotion</strong><span>Tiered loyalty mechanics and a rotating Today’s Special combo system.</span></figcaption></figure><figure class="lim-media"><img src="../assets/projects/lim/banner-prizes.png" alt="Flavour suggestion banner and minigame prizes"><figcaption><strong>Interactive elements</strong><span>Flavour suggestion board, mini-games and branded take-home stickers.</span></figcaption></figure><figure class="lim-media lim-wide"><img src="../assets/projects/lim/donuts-stickers.jpg" alt="Lịm Donuts products and campaign stickers"><figcaption><strong>Physical brand touchpoints</strong><span>Product trial supported by playful stickers and campaign takeaways.</span></figcaption></figure></div></div></section>
+<section class="detail-section" id="touchpoints"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">03 / Campaign Touchpoints</div><h2>One idea,<br>multiple <span class="red">moments.</span></h2></div><div><p>The campaign was translated into a focused set of online and offline touchpoints designed to simplify choice, encourage participation and keep the visual identity recognisable across the customer journey.</p></div></div>
+<div class="scar-touch-grid reveal">
+<figure class="scar-touch-card"><div class="scar-touch-media"><img src="../assets/projects/lim/leaflet.png" alt="Lịm Donuts campaign leaflet"></div><figcaption><strong>Leaflet</strong><span>Campaign introduction, brand context and QR-linked social channels.</span></figcaption></figure>
+<figure class="scar-touch-card"><div class="scar-touch-media"><img src="../assets/projects/lim/add-yours.png" alt="Instagram Add Yours Valentine template"></div><figcaption><strong>Instagram “Add Yours”</strong><span>A Valentine-themed UGC prompt designed for tagging and organic sharing.</span></figcaption></figure>
+<figure class="scar-touch-card"><div class="scar-touch-media"><img src="../assets/projects/lim/loyalty-board.png" alt="Loyalty card and Today's Special combo board"></div><figcaption><strong>Sales promotion</strong><span>Tiered loyalty mechanics and a rotating Today’s Special combo system.</span></figcaption></figure>
+<figure class="scar-touch-card"><div class="scar-touch-media"><img src="../assets/projects/lim/banner-prizes.png" alt="Flavour suggestion banner and minigame prizes"></div><figcaption><strong>Interactive elements</strong><span>Flavour suggestion board, mini-games and branded take-home stickers.</span></figcaption></figure>
+</div></div></section>
 
-<section class="detail-section" id="activation"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">04 / Live Activation</div><h2>Taking the idea<br><span class="red">offline.</span></h2></div><div><p>At Marketing Exhibit 5.0, the campaign became a live experience. The booth combined product display, flavour-sharing prompts, mini-game rewards, printed collateral and direct audience interaction.</p><p>This section matters to me because it shows the campaign beyond slides: the concept had to be explained, presented and experienced by real visitors.</p></div></div><div class="lim-activation-grid reveal"><figure class="lim-booth"><img src="../assets/projects/lim/booth-wide.jpg" alt="Lịm Donuts exhibition booth"><figcaption>The full Lịm Donuts campaign booth at Marketing Exhibit 5.0.</figcaption></figure><div class="lim-activation-side"><figure class="lim-team"><img src="../assets/projects/lim/team-booth.jpg" alt="Scarlett and teammate at the Lịm Donuts booth"><figcaption>Scarlett and teammate at the booth.</figcaption></figure><figure class="timelapse-card"><video controls preload="metadata" playsinline poster="../assets/projects/lim/booth-wide.jpg"><source src="../assets/projects/lim/booth-timelapse.mp4" type="video/mp4">Your browser does not support the video tag.</video><figcaption><strong>Booth setup timelapse</strong><span>Behind the scenes as the exhibition space came together.</span></figcaption></figure></div></div></div></section>
+<section class="detail-section" id="activation"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">04 / Live Activation</div><h2>Taking the idea<br><span class="red">offline.</span></h2></div><div><p>At Marketing Exhibit 5.0, the campaign became a live experience. The booth combined product display, flavour-sharing prompts, mini-game rewards, printed collateral and direct audience interaction.</p><p>This shows the campaign beyond slides: the concept had to be explained, presented and experienced by real visitors.</p></div></div>
+<div class="scar-activation-grid reveal">
+<figure class="scar-booth-card"><div class="scar-booth-media"><img src="../assets/projects/lim/booth-wide.jpg" alt="Lịm Donuts exhibition booth"></div><figcaption>The full Lịm Donuts campaign booth at Marketing Exhibit 5.0.</figcaption></figure>
+<div class="scar-side-stack">
+<figure class="scar-side-card"><div class="scar-side-media"><img src="../assets/projects/lim/team-booth.jpg" alt="Scarlett and teammate at the Lịm Donuts booth"></div><figcaption>Scarlett and teammate at the booth.</figcaption></figure>
+<figure class="scar-side-card"><div class="scar-side-media"><video controls preload="metadata" poster="../assets/projects/lim/booth-wide.jpg"><source src="../assets/projects/lim/booth-timelapse.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><figcaption><strong>Booth setup timelapse</strong>Behind the scenes as the exhibition space came together.</figcaption></figure>
+</div></div></div></section>
 
-<section class="detail-section lim-results" id="results"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">05 / Results & Proof</div><h2>The idea got<br><span class="red">a response.</span></h2></div><div><p>The project achieved <strong>40/45</strong> and received the <strong>People’s Choice Award</strong> and <strong>Interactive Booth Award</strong>. The vote sheet recorded <strong>27 votes</strong> for Lịm Donuts, the highest result among six booths.</p></div></div><div class="lim-proof-grid reveal"><figure class="lim-proof vote"><img src="../assets/projects/lim/vote-sheet.jpg" alt="People's Choice vote sheet"><figcaption><strong>27 votes</strong><span>Highest among six booths.</span></figcaption></figure><figure class="lim-proof grade"><img src="../assets/projects/lim/grade.png" alt="40 out of 45 assignment grade"><figcaption><strong>40 / 45</strong><span>Final campaign result.</span></figcaption></figure><figure class="lim-proof awards"><img src="../assets/projects/lim/awards-photo.jpg" alt="Scarlett and teammate holding award certificates"><figcaption><strong>After the exhibition</strong><span>Scarlett and teammate with the award certificates.</span></figcaption></figure><figure class="lim-proof cert"><img src="../assets/projects/lim/peoples-choice-award.png" alt="People's Choice Award certificate"><figcaption>People’s Choice Award.</figcaption></figure><figure class="lim-proof cert"><img src="../assets/projects/lim/interactive-award.png" alt="Interactive Booth Award certificate"><figcaption>Interactive Booth Award.</figcaption></figure></div></div></section>
+<section class="detail-section lim-results" id="results"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">05 / Results & Proof</div><h2>The idea got<br><span class="red">a response.</span></h2></div><div><p>The project achieved <strong>40/45</strong> and received the <strong>People’s Choice Award</strong> and <strong>Interactive Booth Award</strong>. The vote sheet recorded <strong>27 votes</strong> for Lịm Donuts, the highest result among six booths.</p></div></div>
+<div class="scar-proof-grid reveal">
+<figure class="scar-proof-card"><div class="scar-proof-media"><img src="../assets/projects/lim/vote-sheet.jpg" alt="People's Choice vote sheet"></div><figcaption><strong>27 votes</strong><span>Highest among six booths.</span></figcaption></figure>
+<figure class="scar-proof-card"><div class="scar-proof-media"><img src="../assets/projects/lim/grade.png" alt="40 out of 45 assignment grade"></div><figcaption><strong>40 / 45</strong><span>Final campaign result.</span></figcaption></figure>
+<figure class="scar-proof-card"><div class="scar-proof-media"><img src="../assets/projects/lim/peoples-choice-award.png" alt="People's Choice Award certificate"></div><figcaption><strong>People’s Choice Award</strong><span>Marketing Exhibit 5.0.</span></figcaption></figure>
+<figure class="scar-proof-card"><div class="scar-proof-media"><img src="../assets/projects/lim/interactive-award.png" alt="Interactive Booth Award certificate"></div><figcaption><strong>Interactive Booth Award</strong><span>Marketing Exhibit 5.0.</span></figcaption></figure>
+<div class="scar-team-strip"><div class="scar-team-media"><img src="../assets/projects/lim/awards-photo.jpg" alt="Scarlett and teammate holding award certificates"></div><div class="scar-team-copy"><strong>After the exhibition</strong><span>Scarlett and teammate with the award certificates. Kept as a compact closing proof point rather than another oversized gallery image.</span></div></div>
+</div></div></section>
 
 <section class="detail-section"><div class="wrap"><div class="detail-columns reveal"><div><div class="eyebrow">06 / Content Output</div><h2>Campaign<br><span class="red">in motion.</span></h2></div><div><p>A short-form content example produced as part of the campaign work.</p></div></div><div class="video-wrap reveal"><video controls preload="metadata" src="../documents/lim-content-video.mp4"></video></div></div></section>
 
