@@ -38,8 +38,9 @@
 .ru-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}.ru-proof{padding:12px}.ru-proof img{display:block;width:100%;height:auto;object-fit:contain;background:#0c0c0c}.ru-proof figcaption{padding:13px 2px 2px}.ru-proof figcaption strong{display:block;margin-bottom:4px}.ru-proof figcaption span{font-size:.86rem;opacity:.72}
 .ru-live{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);border:1px solid var(--ru-line);overflow:hidden;background:var(--ru-card);margin-top:26px}.ru-live-visual{min-height:350px;background:url('../assets/projects/ru/key-visual.jpg') center/cover no-repeat;position:relative}.ru-live-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.01),rgba(0,0,0,.2))}.ru-live-copy{padding:30px;display:flex;flex-direction:column;justify-content:center}.ru-live-copy .micro{font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;opacity:.62}.ru-live-copy h3{font-size:clamp(2rem,3.6vw,3.3rem);line-height:.98;margin:10px 0 13px}.ru-live-copy h3 span{color:var(--ru-gold)}.ru-live-copy p{margin:0 0 20px}.ru-live-link{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 18px;background:var(--ru-gold);color:#111;text-decoration:none;font-weight:750;font-size:.98rem}.ru-live-link b{font-size:1.25rem}.ru-live-link:hover{filter:brightness(1.05)}
 .ru-team-grid{
-  grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);
+  grid-template-columns:minmax(0,1fr) minmax(340px,.9fr);
   margin-top:24px;
+  gap:20px;
   align-items:stretch;
 }
 .ru-team-grid > .ru-media{
@@ -51,17 +52,19 @@
 }
 .ru-team-grid > .ru-media img{
   width:100%;
-  height:100%;
-  min-height:650px;
+  height:auto;
+  aspect-ratio:4/5;
+  min-height:0;
   max-height:none;
   object-fit:cover;
-  object-position:50% 47%;
+  object-position:38% 46%;
+  background:#0c0c0c;
 }
 .ru-team-grid > .ru-media figcaption{padding:16px 18px 18px}
 .ru-team-stack{
   display:grid;
   grid-template-rows:1fr 1fr;
-  gap:22px;
+  gap:20px;
   height:100%;
 }
 .ru-team-stack .ru-media{
@@ -74,11 +77,15 @@
 .ru-team-stack .ru-media img,
 .ru-team-grid .portrait img{
   width:100%;
-  height:100%;
-  min-height:290px;
+  height:auto;
+  aspect-ratio:4/3;
+  min-height:0;
   max-height:none;
   object-fit:cover;
+  background:#0c0c0c;
 }
+.ru-team-selfie img{object-position:50% 42%}
+.ru-team-process img{object-position:70% 50%}
 .ru-team-stack .ru-media figcaption{padding:14px 16px 16px}
 .ru-validation{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px;align-items:stretch}
 .ru-validation .ru-proof{height:100%}
@@ -137,7 +144,7 @@ body[data-theme='light'] .ru-proof img{
   .ru-live-copy{padding:26px}
   .ru-hero{padding-top:44px}
   .ru-keyvisual{order:-1}
-  .ru-team-grid > .ru-media img{min-height:0;height:auto;aspect-ratio:4/3;object-fit:cover}
+  .ru-team-grid > .ru-media img{min-height:0;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:38% 46%}
   .ru-team-stack{grid-template-rows:auto}
   .ru-team-stack .ru-media img,.ru-team-grid .portrait img{min-height:0;height:auto;max-height:none}
 }
@@ -161,7 +168,7 @@ body[data-theme='light'] .ru-proof img{
 
 <section class="detail-section" id="digital"><div class="wrap"><div class="detail-columns reveal"><div><div class="ru-kicker">05 / Digital Experience</div><h2 class="ru-section-title">Making the service<br><span class="gold">tangible.</span></h2></div><div><p>I designed and built a guest-facing RU prototype to demonstrate how the pre-arrival sleep profile could work in practice. It supported the pitch by making the proposed journey easier to understand.</p><p>The prototype also gave reviewers a working touchpoint to explore outside the presentation deck.</p></div></div><div class="ru-live reveal"><div class="ru-live-visual" aria-hidden="true"></div><div class="ru-live-copy"><span class="micro">Guest-facing digital prototype</span><h3>View the RU<br><span>website.</span></h3><p>Explore the prototype used to communicate the proposed pre-arrival experience.</p><a class="ru-live-link" href="https://ngyenscar9-stack.github.io/RU-The-Rhythm-of-Rest-1/" target="_blank" rel="noreferrer"><span>OPEN LIVE PROTOTYPE</span><b>↗</b></a></div></div></div></section>
 
-<section class="detail-section" id="pitch"><div class="wrap"><div class="detail-columns reveal"><div><div class="ru-kicker">06 / Client Pitch & Validation</div><h2 class="ru-section-title">Client pitch<br><span class="gold">& outcome.</span></h2></div><div><p>Our Hanoi-based team presented RU online to the client panel in Saigon. The project received <strong>Second Runner-up</strong>, placing in the Top 3 of six finalist teams in the voco Scenia Bay Nha Trang by IHG client pitch.</p><p>After the pitch, Course Coordinator Dr Justin Matthew Pang asked for the slides to showcase the project at Saigon South Experience Day.</p></div></div><div class="ru-team-grid reveal"><figure class="ru-media"><img src="../assets/projects/ru/team-final.jpg" alt="RU team after the final presentation"><figcaption><strong>The RU team</strong><span>Four-person project team after the final presentation.</span></figcaption></figure><div class="ru-team-stack"><figure class="ru-media portrait"><img src="../assets/projects/ru/team-after-pitch.jpg" alt="RU team after pitching"><figcaption><strong>After the pitch</strong><span>Team moment in front of the RU presentation.</span></figcaption></figure><figure class="ru-media portrait"><img src="../assets/projects/ru/pitch-room.jpg" alt="RU team during the online pitch"><figcaption><strong>Pitch day</strong><span>Presenting from Hanoi to the client panel in Saigon.</span></figcaption></figure></div></div><div class="ru-validation reveal"><figure class="ru-proof ru-cert"><img src="../assets/projects/ru/certificate.png" alt="Second Runner-up certificate for RU"><figcaption><strong>Second Runner-up</strong><span>Certificate from the voco Scenia Bay client pitching competition.</span></figcaption></figure><figure class="ru-proof"><img src="../assets/projects/ru/showcase-request.jpg" alt="Course Coordinator request to showcase the RU project at SGS Experience Day"><figcaption><strong>SGS Experience Day showcase request</strong><span>Course Coordinator Dr Justin Pang requested the slides for showcase.</span></figcaption></figure></div></div></section>
+<section class="detail-section" id="pitch"><div class="wrap"><div class="detail-columns reveal"><div><div class="ru-kicker">06 / Client Pitch & Validation</div><h2 class="ru-section-title">Client pitch<br><span class="gold">& outcome.</span></h2></div><div><p>Our Hanoi-based team presented RU online to the client panel in Saigon. The project received <strong>Second Runner-up</strong>, placing in the Top 3 of six finalist teams in the voco Scenia Bay Nha Trang by IHG client pitch.</p><p>After the pitch, Course Coordinator Dr Justin Matthew Pang asked for the slides to showcase the project at Saigon South Experience Day.</p></div></div><div class="ru-team-grid reveal"><figure class="ru-media ru-team-main"><img src="../assets/projects/ru/team-final.jpg" alt="RU team after the final presentation"><figcaption><strong>The RU team</strong><span>Four-person project team after the final presentation.</span></figcaption></figure><div class="ru-team-stack"><figure class="ru-media portrait ru-team-selfie"><img src="../assets/projects/ru/team-after-pitch.jpg" alt="RU team after pitching"><figcaption><strong>After the pitch</strong><span>Team moment in front of the RU presentation.</span></figcaption></figure><figure class="ru-media portrait ru-team-process"><img src="../assets/projects/ru/pitch-room.jpg" alt="RU team during the online pitch"><figcaption><strong>Pitch day</strong><span>Presenting from Hanoi to the client panel in Saigon.</span></figcaption></figure></div></div><div class="ru-validation reveal"><figure class="ru-proof ru-cert"><img src="../assets/projects/ru/certificate.png" alt="Second Runner-up certificate for RU"><figcaption><strong>Second Runner-up</strong><span>Certificate from the voco Scenia Bay client pitching competition.</span></figcaption></figure><figure class="ru-proof"><img src="../assets/projects/ru/showcase-request.jpg" alt="Course Coordinator request to showcase the RU project at SGS Experience Day"><figcaption><strong>SGS Experience Day showcase request</strong><span>Course Coordinator Dr Justin Pang requested the slides for showcase.</span></figcaption></figure></div></div></section>
 
 <section class="detail-section" id="files"><div class="wrap"><div class="detail-columns reveal"><div><div class="ru-kicker">07 / Full Files</div><h2 class="ru-section-title">Full project<br><span class="gold">files.</span></h2></div><div><p>The full deck contains the research, service features, feasibility, implementation plan and appendices behind RU.</p><div class="ru-files-actions"><a class="ru-btn primary" href="https://ngyenscar9-stack.github.io/RU-The-Rhythm-of-Rest-1/" target="_blank" rel="noreferrer">Explore live RU website ↗</a><a class="ru-btn" href="../documents/ru-certificate.pdf" target="_blank">Open certificate ↗</a></div></div></div><div class="pdf-shell reveal"><div class="pdf-head"><strong>Full RU pitch deck</strong><a href="../documents/ru-rhythm-of-rest.pdf" target="_blank">Open in new tab ↗</a></div><iframe class="pdf-viewer" loading="lazy" src="../documents/ru-rhythm-of-rest.pdf#view=FitH"></iframe></div><a class="next-card reveal" href="lim-donuts.html"><span class="eyebrow">Next project</span><strong>Lịm Donuts — Donut Overthink It ↗</strong></a></div></section>
 </main><footer><div class="wrap">Nguyen Huyen Anh (Scarlett) · Digital Marketing Portfolio · 2026</div></footer><script src="../script.js"></script></body></html>
