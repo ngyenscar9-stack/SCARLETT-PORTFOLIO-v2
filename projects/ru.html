@@ -3,23 +3,148 @@
 <meta name="description" content="RU — The Rhythm of Rest, hospitality strategy and digital experience case study by Scarlett Nguyen">
 <title>RU — The Rhythm of Rest — Scarlett Nguyen</title>
 <link rel="stylesheet" href="../styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
 :root{--ru-gold:#f2bc19;--ru-navy:#171750;--ru-line:rgba(255,255,255,.12);--ru-card:rgba(255,255,255,.035);}
-.ru-hero{padding:52px 0 44px}.ru-hero-grid{display:grid;grid-template-columns:minmax(0,.88fr) minmax(420px,1.12fr);gap:34px;align-items:center}.ru-hero h1{font-size:clamp(3.7rem,6vw,6.2rem);line-height:.9;margin:.18em 0 .2em}.ru-hero h1 em{display:block;color:var(--ru-gold);font-size:.48em;line-height:1.05;margin-top:.22em;font-style:italic;font-weight:400}.ru-hero p{font-size:1.02rem;max-width:640px}.ru-keyvisual{margin:0;border:1px solid var(--ru-line);padding:10px;background:var(--ru-card)}.ru-keyvisual img{display:block;width:100%;height:auto}.ru-keyvisual figcaption{padding:10px 2px 2px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;opacity:.65}
+.ru-hero{padding:52px 0 52px}
+.ru-hero-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(420px,1.08fr);gap:42px;align-items:center}
+.ru-hero h1{
+  margin:30px 0 22px;
+  font:400 clamp(68px,8vw,124px)/.78 'Playfair Display',Georgia,'Times New Roman',serif;
+  letter-spacing:-.055em;
+}
+.ru-hero h1 em{
+  display:block;
+  color:var(--ru-gold);
+  font:italic 400 .48em/1.08 'Playfair Display',Georgia,'Times New Roman',serif;
+  letter-spacing:-.025em;
+  margin-top:.28em;
+}
+.ru-hero p{
+  max-width:690px;
+  font-size:15px;
+  line-height:1.76;
+  color:#c7bfb6;
+}
+.ru-keyvisual{margin:0;border:1px solid var(--ru-line);padding:12px;background:var(--ru-card)}
+.ru-keyvisual img{display:block;width:100%;height:auto}
+.ru-keyvisual figcaption{padding:11px 3px 2px;font-size:.75rem;line-height:1.5;letter-spacing:.06em;text-transform:uppercase;opacity:.68}
 .ru-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}.ru-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 19px;border:1px solid var(--ru-line);text-decoration:none;border-radius:999px;font-weight:700}.ru-btn.primary{background:var(--ru-gold);border-color:var(--ru-gold);color:#111}.ru-btn:hover{transform:translateY(-2px)}
 .ru-result-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px}.ru-result-row>div{border-top:1px solid var(--ru-line);padding-top:14px}.ru-result-row strong{display:block;font-size:1.55rem}.ru-result-row span{display:block;font-size:.8rem;opacity:.7;margin-top:4px}
 .ru-kicker{font-size:14px;letter-spacing:.18em;text-transform:uppercase;font-weight:400;opacity:.72;margin-bottom:14px}.ru-section-title{font-size:clamp(2.5rem,5vw,4.9rem);line-height:.94;margin:0}.ru-section-title .gold{color:var(--ru-gold)}
-.ru-grid2,.ru-grid3,.ru-proof-grid,.ru-team-grid{display:grid;gap:22px}.ru-grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.ru-grid3{grid-template-columns:repeat(3,minmax(0,1fr))}.ru-card,.ru-media,.ru-proof{border:1px solid var(--ru-line);background:var(--ru-card)}.ru-card{padding:22px}.ru-card strong{display:block;font-size:1.05rem;margin-bottom:6px}.ru-card p{margin:.25em 0 0}.ru-media{margin:0;padding:12px}.ru-media img{width:100%;height:auto;display:block;object-fit:contain;background:#0c0c0c}.ru-media figcaption{padding:13px 2px 2px}.ru-media figcaption strong{display:block;font-size:1.03rem;margin-bottom:3px}.ru-media figcaption span{opacity:.7;font-size:.88rem}
+.ru-grid2,.ru-grid3,.ru-proof-grid,.ru-team-grid{display:grid;gap:22px;align-items:stretch}.ru-grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.ru-grid3{grid-template-columns:repeat(3,minmax(0,1fr))}.ru-card,.ru-media,.ru-proof{border:1px solid var(--ru-line);background:var(--ru-card)}.ru-card{padding:22px}.ru-card strong{display:block;font-size:1.05rem;margin-bottom:6px}.ru-card p{margin:.25em 0 0}.ru-media{margin:0;padding:12px}.ru-media img{width:100%;height:auto;display:block;object-fit:contain;background:#0c0c0c}.ru-media figcaption{padding:13px 2px 2px}.ru-media figcaption strong{display:block;font-size:1.03rem;margin-bottom:3px}.ru-media figcaption span{opacity:.7;font-size:.88rem}
 .ru-role-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}.ru-role-chip{border:1px solid var(--ru-line);padding:14px 16px}.ru-role-chip b{display:block;margin-bottom:3px}.ru-role-chip span{font-size:.86rem;opacity:.7}
 .ru-brand-note{border-left:4px solid var(--ru-gold);padding:4px 0 4px 18px;margin:22px 0 0}.ru-brand-note strong{color:var(--ru-gold)}
 .ru-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}.ru-proof{padding:12px}.ru-proof img{display:block;width:100%;height:auto;object-fit:contain;background:#0c0c0c}.ru-proof figcaption{padding:13px 2px 2px}.ru-proof figcaption strong{display:block;margin-bottom:4px}.ru-proof figcaption span{font-size:.86rem;opacity:.72}
 .ru-live{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);border:1px solid var(--ru-line);overflow:hidden;background:var(--ru-card);margin-top:26px}.ru-live-visual{min-height:350px;background:url('../assets/projects/ru/key-visual.jpg') center/cover no-repeat;position:relative}.ru-live-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.01),rgba(0,0,0,.2))}.ru-live-copy{padding:30px;display:flex;flex-direction:column;justify-content:center}.ru-live-copy .micro{font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;opacity:.62}.ru-live-copy h3{font-size:clamp(2rem,3.6vw,3.3rem);line-height:.98;margin:10px 0 13px}.ru-live-copy h3 span{color:var(--ru-gold)}.ru-live-copy p{margin:0 0 20px}.ru-live-link{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 18px;background:var(--ru-gold);color:#111;text-decoration:none;font-weight:750;font-size:.98rem}.ru-live-link b{font-size:1.25rem}.ru-live-link:hover{filter:brightness(1.05)}
-.ru-team-grid{grid-template-columns:1.25fr .75fr;margin-top:24px}.ru-team-stack{display:grid;gap:22px}.ru-team-grid .ru-media img{max-height:520px}.ru-team-grid .portrait img{max-height:330px}.ru-validation{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px}.ru-validation .ru-proof img{max-height:500px}.ru-cert img{background:#f4f1e8}
+.ru-team-grid{
+  grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);
+  margin-top:24px;
+  align-items:stretch;
+}
+.ru-team-grid > .ru-media{
+  height:100%;
+  padding:0;
+  overflow:hidden;
+  display:grid;
+  grid-template-rows:minmax(0,1fr) auto;
+}
+.ru-team-grid > .ru-media img{
+  width:100%;
+  height:100%;
+  min-height:650px;
+  max-height:none;
+  object-fit:cover;
+  object-position:50% 47%;
+}
+.ru-team-grid > .ru-media figcaption{padding:16px 18px 18px}
+.ru-team-stack{
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:22px;
+  height:100%;
+}
+.ru-team-stack .ru-media{
+  height:100%;
+  padding:0;
+  overflow:hidden;
+  display:grid;
+  grid-template-rows:minmax(0,1fr) auto;
+}
+.ru-team-stack .ru-media img,
+.ru-team-grid .portrait img{
+  width:100%;
+  height:100%;
+  min-height:290px;
+  max-height:none;
+  object-fit:cover;
+}
+.ru-team-stack .ru-media figcaption{padding:14px 16px 16px}
+.ru-validation{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px;align-items:stretch}
+.ru-validation .ru-proof{height:100%}
+.ru-validation .ru-proof img{max-height:500px}
+.ru-cert img{background:#f4f1e8}
 .ru-note{margin-top:18px;padding:16px 18px;border:1px solid var(--ru-line);font-size:.92rem}.ru-note strong{color:var(--ru-gold)}
 .ru-files-actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 26px}
-html.light .ru-card,html.light .ru-media,html.light .ru-proof,html.light .ru-keyvisual,html.light .ru-live,html[data-theme="light"] .ru-card,html[data-theme="light"] .ru-media,html[data-theme="light"] .ru-proof,html[data-theme="light"] .ru-keyvisual,html[data-theme="light"] .ru-live,body.light .ru-card,body.light .ru-media,body.light .ru-proof,body.light .ru-keyvisual,body.light .ru-live{background:#fffdf8;border-color:rgba(94,72,44,.22)}
-html.light .ru-role-chip,html[data-theme="light"] .ru-role-chip,body.light .ru-role-chip{border-color:rgba(94,72,44,.22)}
-@media(max-width:900px){.ru-hero-grid,.ru-live,.ru-grid2,.ru-grid3,.ru-proof-grid,.ru-team-grid,.ru-validation{grid-template-columns:1fr}.ru-result-row{grid-template-columns:1fr}.ru-role-list{grid-template-columns:1fr}.ru-live-visual{min-height:300px}.ru-live-copy{padding:26px}.ru-hero{padding-top:44px}.ru-keyvisual{order:-1}.ru-team-grid .ru-media img,.ru-team-grid .portrait img{max-height:none}}
+body[data-theme='light'] .ru-card,
+body[data-theme='light'] .ru-media,
+body[data-theme='light'] .ru-proof,
+body[data-theme='light'] .ru-keyvisual,
+body[data-theme='light'] .ru-live{
+  background:#fffaf3;
+  border-color:rgba(84,61,44,.34);
+  box-shadow:0 8px 22px rgba(67,47,32,.055);
+}
+body[data-theme='light'] .ru-role-chip,
+body[data-theme='light'] .ru-note{
+  background:#fffaf3;
+  border-color:rgba(84,61,44,.34);
+}
+body[data-theme='light'] .ru-result-row>div{
+  border-color:rgba(84,61,44,.34);
+}
+body[data-theme='light'] .ru-btn:not(.primary){
+  border-color:rgba(84,61,44,.38);
+}
+body[data-theme='light'] .ru-hero p,
+body[data-theme='light'] .ru-media figcaption span,
+body[data-theme='light'] .ru-proof figcaption span,
+body[data-theme='light'] .ru-role-chip span{
+  color:#514a43;
+  opacity:1;
+}
+body[data-theme='light'] .ru-keyvisual figcaption,
+body[data-theme='light'] .ru-live-copy .micro{
+  color:#625950;
+  opacity:1;
+}
+body[data-theme='light'] .ru-section-title .gold,
+body[data-theme='light'] .ru-brand-note strong{
+  color:#a96f00;
+}
+body[data-theme='light'] .ru-brand-note{
+  border-left-color:#c48700;
+}
+body[data-theme='light'] .ru-media img,
+body[data-theme='light'] .ru-proof img{
+  background:#eee7de;
+}
+@media(max-width:900px){
+  .ru-hero-grid,.ru-live,.ru-grid2,.ru-grid3,.ru-proof-grid,.ru-team-grid,.ru-validation{grid-template-columns:1fr}
+  .ru-result-row{grid-template-columns:1fr}
+  .ru-role-list{grid-template-columns:1fr}
+  .ru-live-visual{min-height:300px}
+  .ru-live-copy{padding:26px}
+  .ru-hero{padding-top:44px}
+  .ru-keyvisual{order:-1}
+  .ru-team-grid > .ru-media img{min-height:0;height:auto;aspect-ratio:4/3;object-fit:cover}
+  .ru-team-stack{grid-template-rows:auto}
+  .ru-team-stack .ru-media img,.ru-team-grid .portrait img{min-height:0;height:auto;max-height:none}
+}
+@media(max-width:640px){
+  .ru-hero h1{font-size:68px}
+  .ru-hero p{font-size:15px;line-height:1.76}
+}
 </style></head><body><div class="noise"></div>
 <nav><div class="wrap nav"><a class="brand" href="../index.html#top">SCARLETT<b>°</b></a><div class="nav-right"><div class="links"><a href="../index.html#about">About</a><a href="../index.html#work">Work</a><a href="../index.html#experience">Experience</a><a href="../index.html#recognition">Recognition</a><a href="../index.html#contact">Contact</a></div><a class="nav-cv" href="#" onclick="alert('Add your final CV to documents/scarlett-cv.pdf');return false;">CV ↓</a><button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme"><span class="moon">☾</span><span class="sun">☀</span></button></div></div></nav>
 <main>

@@ -620,3 +620,49 @@ body[data-theme='light'] .lim-proof{background:#f8f3ec}
   .lim-proof img{height:auto;max-height:520px}
   .lim-keyvisual{box-shadow:10px 10px 0 rgba(132,8,16,.75)}
 }
+
+
+/* =========================================================
+   LỊM — LIGHT MODE STRUCTURE FIX
+   Keep dark mode unchanged; make cards read as a clear grid.
+   ========================================================= */
+body[data-theme='light'] .lim-result-row>div,
+body[data-theme='light'] .lim-keyvisual,
+body[data-theme='light'] .lim-identity,
+body[data-theme='light'] .lim-media,
+body[data-theme='light'] .lim-activation-grid figure,
+body[data-theme='light'] .lim-proof{
+  border:1px solid rgba(84,61,44,.34);
+}
+
+body[data-theme='light'] .lim-result-row>div,
+body[data-theme='light'] .lim-identity,
+body[data-theme='light'] .lim-media,
+body[data-theme='light'] .lim-activation-grid figure,
+body[data-theme='light'] .lim-proof{
+  background:#fffaf3;
+}
+
+body[data-theme='light'] .lim-result-row span,
+body[data-theme='light'] .lim-media figcaption span,
+body[data-theme='light'] .lim-activation-grid figcaption,
+body[data-theme='light'] .lim-proof figcaption{
+  color:#5a514a;
+  opacity:1;
+}
+
+body[data-theme='light'] .lim-keyvisual{
+  background:#fffaf3;
+  box-shadow:18px 18px 0 #7f1118;
+}
+
+body[data-theme='light'] .lim-identity,
+body[data-theme='light'] .lim-media,
+body[data-theme='light'] .lim-activation-grid figure,
+body[data-theme='light'] .lim-proof{
+  box-shadow:0 8px 22px rgba(67,47,32,.045);
+}
+
+body[data-theme='light'] .lim-hero{
+  border-bottom-color:rgba(84,61,44,.28);
+}
