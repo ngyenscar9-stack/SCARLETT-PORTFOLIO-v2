@@ -115,14 +115,14 @@ nav{position:sticky;top:0;z-index:80;background:rgba(7,7,7,.84);backdrop-filter:
 .track span{padding:0 32px}.track b{color:var(--red-hi)}
 @keyframes move{to{transform:translateX(-50%)}}
 section{padding:98px 0}
-.head{display:grid;grid-template-columns:.72fr 1.28fr;gap:34px;align-items:end;margin-bottom:42px}
-.head h2{margin:0;font:400 clamp(54px,7vw,100px)/.84 var(--display);letter-spacing:-.055em}
-.head p{max-width:620px;margin:0 0 7px auto;font-size:14px;line-height:1.75;color:#bdb4aa}
+.head{display:grid;grid-template-columns:.72fr 1.28fr;gap:34px;align-items:end;margin-bottom:52px}
+.head h2{margin:0;font:400 clamp(68px,8vw,112px)/.82 var(--display);letter-spacing:-.062em}
+.head p{max-width:620px;margin:0 0 7px auto;font-size:14px;line-height:1.78;color:#c9c0b7}
 
 /* WORKING STYLE */
 .approach{padding:80px 0;border-bottom:1px solid var(--line)}
 .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.approach-card{border:1px solid var(--line);min-height:290px;padding:30px;position:relative;overflow:hidden}
+.approach-card{border:1px solid rgba(255,255,255,.24);min-height:290px;padding:30px;position:relative;overflow:hidden}
 .approach-card.red-panel{background:linear-gradient(135deg,#9b0710,#420105)}
 .approach-card.paper-panel{background:var(--paper);color:#111}
 .approach-card h3{font:400 42px/1 var(--display);margin:52px 0 12px}
@@ -132,7 +132,7 @@ section{padding:98px 0}
 /* SELECTED WORK — equal cards */
 .projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .project{
-  min-height:680px;border:1px solid var(--line);position:relative;overflow:hidden;
+  min-height:680px;border:1px solid rgba(255,255,255,.24);position:relative;overflow:hidden;
   background:#111;transition:.28s;display:flex;flex-direction:column
 }
 .project:hover{transform:translateY(-5px)}
@@ -158,7 +158,7 @@ section{padding:98px 0}
 .exp-no{font:italic 32px var(--display);color:var(--red-hi)}
 .exp h3{margin:0 0 7px;font:400 28px/1 var(--display)}
 .org{font-size:8px;text-transform:uppercase;letter-spacing:.14em;color:#aaa}
-.exp p{margin:0;font-size:13px;line-height:1.66;color:#bcb4ab}
+.exp p{margin:0;font-size:13px;line-height:1.7;color:#c9c1b8}
 
 /* ABOUT */
 .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:58px}
@@ -168,16 +168,16 @@ section{padding:98px 0}
 .about-collage div{overflow:hidden;border:1px solid rgba(255,255,255,.65)}
 .about-collage .wide{grid-column:1/3}
 .about-text h2{font:400 clamp(54px,7vw,92px)/.86 var(--display);letter-spacing:-.055em;margin:0 0 22px}
-.about-text p{font-size:15px;line-height:1.8;color:#c7bfb6}
+.about-text p{font-size:15px;line-height:1.8;color:#d0c8bf}
 .about-grid-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
-.meta-card{border-top:1px solid var(--line);padding-top:12px}
+.meta-card{border:1px solid rgba(255,255,255,.20);padding:15px 16px}
 .meta-card strong{font-size:9px;text-transform:uppercase;letter-spacing:.14em;display:block;margin-bottom:7px}
-.meta-card span{font-size:12px;line-height:1.55;color:#bfb7ae}
+.meta-card span{font-size:12px;line-height:1.6;color:#d0c8bf}
 
 /* RECOGNITION */
 .recognition{background:var(--paper);color:#111}
 .awards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.award{min-height:230px;border:1px solid #111;padding:20px;display:flex;flex-direction:column;justify-content:space-between;transition:.22s}
+.award{min-height:230px;border:1px solid rgba(255,255,255,.34);padding:20px;display:flex;flex-direction:column;justify-content:space-between;transition:.22s}
 .award:hover{background:var(--red);color:#fff;transform:rotate(-.7deg)}
 .award .year{font-size:9px;letter-spacing:.13em}
 .award h4{font:400 26px/1.03 var(--display);margin:0}
@@ -290,7 +290,31 @@ body[data-theme='light'] .media-card figcaption,
 body[data-theme='light'] .proof-card p{color:#665e58}
 body[data-theme='light'] .pdf-shell,
 body[data-theme='light'] .video-wrap{background:#e6ddd4}
-body[data-theme='light'] footer{color:#716862}
+body[data-theme='light'] footer{color:#5f5750}
+
+/* HOMEPAGE LIGHT-MODE POLISH */
+body[data-theme='light'] .head p,
+body[data-theme='light'] .exp p,
+body[data-theme='light'] .about-text p,
+body[data-theme='light'] .meta-card span,
+body[data-theme='light'] .project p{color:#3f3833}
+
+body[data-theme='light'] .hero-stat span,
+body[data-theme='light'] .org,
+body[data-theme='light'] .project .idx{color:#5d554f;opacity:1}
+
+body[data-theme='light'] .approach-card,
+body[data-theme='light'] .project,
+body[data-theme='light'] .meta-card{border-color:rgba(84,61,44,.30);box-shadow:0 8px 24px rgba(70,49,35,.055)}
+
+body[data-theme='light'] .meta-card{background:rgba(255,250,243,.64)}
+body[data-theme='light'] .approach-card.paper-panel,
+body[data-theme='light'] .project.paper{border-color:rgba(84,61,44,.34)}
+
+body[data-theme='light'] .exp-list,
+body[data-theme='light'] .exp{border-color:rgba(84,61,44,.24)}
+
+body[data-theme='light'] .award{border-color:rgba(255,255,255,.46)}
 
 /* Responsive */
 @media(max-width:1000px){
@@ -319,6 +343,7 @@ body[data-theme='light'] footer{color:#716862}
   .scrapbook{min-height:1100px}
   .paper-rip{inset:15px 15px 460px 15px;padding:38px 28px}
   .hero h1{font-size:72px;margin-top:30px}
+  .head h2{font-size:62px;line-height:.86}
   .hero-board{height:480px}
   .filmstrip{width:230px;height:360px;right:5%;bottom:55px}
   .identity-card{left:5%;bottom:40px;width:150px}
