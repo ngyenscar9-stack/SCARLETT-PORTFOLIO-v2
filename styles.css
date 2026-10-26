@@ -150,7 +150,7 @@ section{padding:98px 0}
 .card-link{margin-top:auto;padding-top:20px;display:inline-flex;align-items:center;gap:9px;font-size:9px;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
 .card-link::after{content:"↗";font-size:15px}
 .project:hover .card-link{gap:15px}
-.sticker{position:absolute;right:17px;top:17px;width:108px;height:108px;border-radius:50%;background:#fff;color:#94060e;display:grid;place-items:center;text-align:center;font-size:8px;font-weight:700;line-height:1.35;text-transform:uppercase;letter-spacing:.08em;transform:rotate(7deg);z-index:4}
+.sticker{ position:absolute; right:22px; top:20px; width:138px; height:138px; border-radius:50%; background:#fffdf8; color:#94060e; border:2px solid rgba(148,6,14,.22); box-shadow:0 10px 28px rgba(0,0,0,.22); display:grid; place-items:center; text-align:center; font-size:10px; font-weight:700; line-height:1.35; text-transform:uppercase; letter-spacing:.08em; transform:rotate(6deg); z-index:4; }
 
 /* EXPERIENCE */
 .exp-list{border-top:1px solid var(--line)}
