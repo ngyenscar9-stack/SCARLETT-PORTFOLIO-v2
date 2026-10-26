@@ -1,29 +1,244 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Scarlett Nguyen — Digital Marketing Portfolio">
-<title>HopeBox — Scarlett Nguyen</title><link rel="stylesheet" href="../styles.css"></head><body><div class="noise"></div><nav><div class="wrap nav">
-<a class="brand" href="../index.html#top">SCARLETT<b>°</b></a>
-<div class="nav-right">
-  <div class="links">
-    <a href="../index.html#work">Work</a>
-    <a href="../index.html#experience">Experience</a>
-    <a href="../index.html#about">About</a>
-    <a href="../index.html#recognition">Recognition</a>
-    <a href="../index.html#contact">Contact</a>
+<title>HopeBox — Scarlett Nguyen</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .hope-hero{padding:48px 0 66px;border-bottom:1px solid var(--line)}
+  .hope-hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:34px;align-items:center}
+  .hope-hero-copy h1{margin:28px 0 18px;font:400 clamp(72px,8.5vw,132px)/.78 var(--display);letter-spacing:-.065em}
+  .hope-hero-copy>p{max-width:650px;font-size:15px;line-height:1.76;color:#c7bfb6}
+  .hope-cover{margin:0;border:1px solid var(--line);background:#171313;overflow:hidden}
+  .hope-cover img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+  .hope-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+  .hope-fact{border:1px solid var(--line);padding:16px;min-height:108px}
+  .hope-fact strong{display:block;font:400 24px/1 var(--display);margin-bottom:9px}
+  .hope-fact span{font-size:8px;line-height:1.5;text-transform:uppercase;letter-spacing:.1em;color:#aaa198}
+
+  .hope-section-head{display:grid;grid-template-columns:.65fr 1.35fr;gap:56px;align-items:start;margin-bottom:30px}
+  .hope-section-head h2{font:400 clamp(44px,5vw,68px)/.95 var(--display);letter-spacing:-.04em;margin:0}
+  .hope-section-head p{margin:0;font-size:14px;line-height:1.82;color:#c7bfb6}
+  .hope-section-head .eyebrow{margin-bottom:13px}
+
+  .hope-feature{display:grid;grid-template-columns:1.05fr .95fr;gap:14px;margin-top:28px}
+  .hope-media{margin:0;border:1px solid var(--line);background:#151313;overflow:hidden}
+  .hope-media img{width:100%;height:auto;display:block;object-fit:contain;background:#f7f4ed}
+  .hope-media figcaption{padding:12px 14px;font-size:8px;text-transform:uppercase;letter-spacing:.11em;color:#aaa198}
+  .hope-media.tall img{aspect-ratio:1/1.05;object-fit:cover}
+  .hope-media.wide img{aspect-ratio:16/9;object-fit:contain}
+  .hope-media.covered img{aspect-ratio:16/10;object-fit:cover}
+
+  .hope-insight{border:1px solid var(--line);padding:26px;margin-top:14px;display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:start}
+  .hope-insight .num{font:italic 54px/1 var(--display);color:var(--red-hi)}
+  .hope-insight h3{font:400 27px/1.08 var(--display);margin:0 0 11px}
+  .hope-insight p{margin:0;font-size:13px;line-height:1.78;color:#c7bfb6}
+
+  .hope-decision-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .hope-decision-copy{border:1px solid var(--line);padding:26px}
+  .hope-decision-copy h3{font:400 32px/1 var(--display);margin:0 0 14px}
+  .hope-decision-copy p{font-size:13px;line-height:1.78;color:#c7bfb6;margin:0}
+  .hope-decision-copy strong{color:inherit}
+
+  .hope-proto-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+  .hope-proto-grid .hero{grid-column:span 12}
+  .hope-proto-grid .half{grid-column:span 6}
+  .hope-proto-grid .third{grid-column:span 4}
+  .hope-proto-grid .hero img{aspect-ratio:16/9;object-fit:cover}
+  .hope-proto-grid .half img{aspect-ratio:4/3;object-fit:cover}
+  .hope-proto-grid .third img{aspect-ratio:4/5;object-fit:cover}
+
+  .hope-test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .hope-test{border:1px solid var(--line);padding:22px;min-height:250px}
+  .hope-test .n{font:italic 36px/1 var(--display);color:var(--red-hi);margin-bottom:24px}
+  .hope-test h3{font:400 26px/1 var(--display);margin:0 0 12px}
+  .hope-test p{font-size:12px;line-height:1.72;color:#c7bfb6;margin:0}
+  .hope-note{margin-top:14px;border-left:3px solid var(--red-hi);padding:14px 16px;font-size:11px;line-height:1.7;color:#bdb4aa}
+
+  body[data-theme='light'] .hope-hero-copy>p,
+  body[data-theme='light'] .hope-section-head p,
+  body[data-theme='light'] .hope-insight p,
+  body[data-theme='light'] .hope-decision-copy p,
+  body[data-theme='light'] .hope-test p,
+  body[data-theme='light'] .hope-note{color:#4b433d}
+  body[data-theme='light'] .hope-media,
+  body[data-theme='light'] .hope-fact,
+  body[data-theme='light'] .hope-insight,
+  body[data-theme='light'] .hope-decision-copy,
+  body[data-theme='light'] .hope-test{border-color:rgba(63,48,37,.28);background:#fffaf3}
+  body[data-theme='light'] .hope-media figcaption,
+  body[data-theme='light'] .hope-fact span{color:#665e58}
+
+  @media(max-width:1000px){
+    .hope-hero-grid,.hope-section-head,.hope-feature{grid-template-columns:1fr}
+    .hope-cover{max-width:760px}
+    .hope-test-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:640px){
+    .hope-hero-copy h1{font-size:72px}
+    .hope-facts{grid-template-columns:1fr}
+    .hope-insight{grid-template-columns:1fr}
+    .hope-proto-grid{grid-template-columns:1fr}
+    .hope-proto-grid .hero,.hope-proto-grid .half,.hope-proto-grid .third{grid-column:auto}
+    .hope-decision-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<nav><div class="wrap nav">
+  <a class="brand" href="../index.html#top">SCARLETT<b>°</b></a>
+  <div class="nav-right">
+    <div class="links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#recognition">Recognition</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <a class="nav-cv" href="../documents/scarlett-cv.pdf" target="_blank">CV ↓</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme"><span class="moon">☾</span><span class="sun">☀</span></button>
   </div>
-  <a class="nav-cv" href="#" onclick="alert('Add your final CV to documents/scarlett-cv.pdf');return false;">CV ↓</a>
-  <button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme"><span class="moon">☾</span><span class="sun">☀</span></button>
-</div></div></nav>
+</div></nav>
+
 <main>
-<div class="detail-hero"><div class="wrap"><a class="back" href="../index.html#work">← Back to selected work</a>
-<div class="detail-cover reveal"><img src="../assets/projects/hope-cover.jpg" alt="HopeBox cover">
-  <div class="detail-copy"><div class="eyebrow">Integrated Perspectives on Business Problems · RMIT University Vietnam</div><h1>HopeBox</h1><p>A Design Thinking case study that turned seasonal B2B revenue instability into a relationship-management problem — then built a practical intervention around it.</p><div class="detail-meta"><span class="tag">Design Thinking</span><span class="tag">B2B</span><span class="tag">ESG</span><span class="tag">Stakeholder Strategy</span></div></div>
-</div></div></div>
-<div class="case-nav"><div class="wrap"><a href="#overview">Overview</a><a href="#role">My role</a><a href="#process">Process</a><a href="#proof">Proof</a><a href="#files">Files</a></div></div>
-<section class="detail-section" id="overview"><div class="wrap"><div class="detail-columns reveal"><h2>The business problem</h2><div><p>HopeBox is a Vietnamese social enterprise supporting women survivors of gender-based violence through employment, training and broader transition support. The project focused on a business problem: corporate engagement and B2B purchasing were concentrated around festive seasons, creating unstable revenue across the year.</p>
-<div class="proof-strip"><div class="proof-card"><strong>Key stakeholder</strong><p>Corporate B2B partners</p></div><div class="proof-card"><strong>Design lens</strong><p>Desirability · Feasibility · Viability</p></div></div></div></div></div></section><section class="detail-section" id="role"><div class="wrap"><div class="detail-columns reveal"><h2>Project scope</h2><div><p>This team project used Design Thinking to move from a broad seasonal-revenue problem toward a stakeholder-centred intervention. The portfolio case focuses on the process evidenced in the final report rather than claiming individual ownership of every output.</p>
-<div class="role-list"><div class="role-chip">Stakeholder analysis</div><div class="role-chip">Persona & empathy mapping</div><div class="role-chip">Journey mapping</div><div class="role-chip">5 Whys</div><div class="role-chip">Affinity diagramming</div><div class="role-chip">Solution prioritisation</div></div></div></div></div></section><section class="detail-section" id="process"><div class="wrap"><div class="detail-columns reveal"><h2>From diagnosis to solution</h2><div><h3>01 — Reframe the problem</h3><p>The report found that the issue was not simply low interest. Corporate partners lacked structured reasons to engage beyond seasonal campaigns.</p>
-<h3>02 — Prioritise the stakeholder</h3><p>Corporate B2B partners were selected because of their direct influence on revenue continuity and partnership sustainability.</p>
-<h3>03 — Compare solution routes</h3><p>Ideas were grouped and evaluated using an Action Priority Matrix based on strategic impact and implementation effort.</p>
-<h3>04 — Prototype the quick win</h3><p>The <strong>Mid-Year Impact Gala</strong> was prioritised as the most balanced quick-win concept: a corporate ESG networking and fundraising event supported by invitations, partnership materials, impact storytelling and LinkedIn recognition.</p></div></div></div></section><section class="detail-section" id="proof"><div class="wrap"><div class="detail-columns reveal"><h2>Selected proof</h2><div><p>A curated view of the work. The full files are embedded below so the case study stays readable without hiding the evidence.</p></div></div><div class="gallery reveal"><figure class="media-card wide"><img src="../assets/projects/hope-priority.jpg" alt="Action Priority Matrix"><figcaption>Action Priority Matrix</figcaption></figure><figure class="media-card narrow"><img src="../assets/projects/hope-mockup.jpg" alt="Mid-Year Impact Gala mock-up"><figcaption>Mid-Year Impact Gala mock-up</figcaption></figure></div></div></section><section class="detail-section" id="files"><div class="wrap"><div class="detail-columns reveal"><h2>Project files</h2><div><p>Preview the source material directly here, or open it in a new tab for full-screen reading.</p></div></div><div class="pdf-shell reveal"><div class="pdf-head"><strong>Final business-solution report</strong><a href="../documents/hopebox-report.pdf" target="_blank">Open in new tab ↗</a></div><iframe class="pdf-viewer" loading="lazy" src="../documents/hopebox-report.pdf#view=FitH"></iframe></div><div class="pdf-shell reveal"><div class="pdf-head"><strong>Original HopeBox case study</strong><a href="../documents/hopebox-case-study.pdf" target="_blank">Open in new tab ↗</a></div><iframe class="pdf-viewer" loading="lazy" src="../documents/hopebox-case-study.pdf#view=FitH"></iframe></div><a class="next-card reveal" href="gom-vi.html"><span class="eyebrow">Next project</span><strong>GOM VỊ ↗</strong></a></div></section></main><footer><div class="wrap">Nguyen Huyen Anh (Scarlett) · Digital Marketing Portfolio · 2026</div></footer>
-<script src="../script.js"></script></body></html>
+<section class="hope-hero">
+  <div class="wrap">
+    <a class="back" href="../index.html#work">← Back to selected work</a>
+    <div class="hope-hero-grid reveal">
+      <div class="hope-hero-copy">
+        <div class="eyebrow">Integrated Perspectives on Business Problems · Team Project</div>
+        <h1>HopeBox</h1>
+        <p>A Design Thinking project focused on one business challenge: how HopeBox could build more consistent corporate engagement beyond seasonal campaigns and strengthen year-round revenue resilience.</p>
+        <div class="detail-meta">
+          <span class="tag">Design Thinking</span>
+          <span class="tag">B2B Strategy</span>
+          <span class="tag">Stakeholder Insight</span>
+          <span class="tag">ESG</span>
+        </div>
+        <div class="hope-facts">
+          <div class="hope-fact"><strong>Core problem</strong><span>Seasonal B2B engagement</span></div>
+          <div class="hope-fact"><strong>Priority audience</strong><span>Corporate partners</span></div>
+          <div class="hope-fact"><strong>Selected route</strong><span>Mid-Year Impact Gala</span></div>
+        </div>
+      </div>
+      <figure class="hope-cover"><img src="../assets/projects/hope-cover.jpg" alt="HopeBox Mid-Year Impact Gala concept and strategy artefacts"></figure>
+    </div>
+  </div>
+</section>
+
+<div class="case-nav"><div class="wrap">
+  <a href="#problem">Problem</a>
+  <a href="#insight">Insight</a>
+  <a href="#decision">Decision</a>
+  <a href="#prototype">Prototype</a>
+  <a href="#testing">Testing</a>
+  <a href="#files">Files</a>
+</div></div>
+
+<section class="detail-section" id="problem">
+  <div class="wrap">
+    <div class="hope-section-head reveal">
+      <div><div class="eyebrow">01 / Business Problem</div><h2>Revenue was not the whole problem.</h2></div>
+      <p>HopeBox operates with year-round programme and support costs, while corporate purchasing and engagement are concentrated around Tet, Mid-Autumn and Christmas. The project reframed that instability as a relationship problem: corporate partners had limited reasons and structures to stay engaged between seasonal peaks.</p>
+    </div>
+    <div class="hope-feature reveal">
+      <figure class="hope-media wide"><img src="../assets/projects/hopebox/problem-gap.jpeg" alt="HopeBox seasonal B2B engagement gap"><figcaption>Seasonal B2B engagement gap</figcaption></figure>
+      <div class="hope-insight">
+        <div class="num">01</div>
+        <div><h3>The strategic shift</h3><p>Instead of treating the challenge as a short-term sales dip, the team focused on creating continuous corporate touchpoints that could support stronger partnership continuity and more stable revenue.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section" id="insight">
+  <div class="wrap">
+    <div class="hope-section-head reveal">
+      <div><div class="eyebrow">02 / Stakeholder Insight</div><h2>Prioritise the people who shape continuity.</h2></div>
+      <p>Corporate B2B partners were prioritised because procurement decisions, CSR budgets and long-term partnership commitment directly affect HopeBox's revenue continuity. Stakeholder mapping and empathy work highlighted a consistent need for measurable impact, clear engagement opportunities and stronger year-round visibility.</p>
+    </div>
+    <div class="hope-feature reveal">
+      <figure class="hope-media"><img src="../assets/projects/hopebox/stakeholder-map.png" alt="HopeBox stakeholder map"><figcaption>Stakeholder prioritisation</figcaption></figure>
+      <figure class="hope-media"><img src="../assets/projects/hopebox/empathy-map.png" alt="Corporate partner empathy map"><figcaption>Corporate partner empathy map</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section" id="decision">
+  <div class="wrap">
+    <div class="hope-section-head reveal">
+      <div><div class="eyebrow">03 / Decision Logic</div><h2>Four routes. One practical quick win.</h2></div>
+      <p>The ideation stage produced four solution routes across continuous engagement and strategic partnership. An Action Priority Matrix then compared implementation effort with strategic impact. The Mid-Year Impact Gala was selected as the strongest quick win.</p>
+    </div>
+    <div class="hope-decision-grid reveal">
+      <figure class="hope-media"><img src="../assets/projects/hopebox/brainstorm.png" alt="How Might We brainstorming and affinity diagram"><figcaption>How Might We + affinity diagram</figcaption></figure>
+      <figure class="hope-media"><img src="../assets/projects/hopebox/priority.png" alt="Action Priority Matrix"><figcaption>Action Priority Matrix</figcaption></figure>
+      <div class="hope-decision-copy">
+        <h3>Why the gala?</h3>
+        <p>It creates a dedicated mid-year reason for corporate partners to reconnect with HopeBox during a low-engagement period, while combining fundraising, networking, impact storytelling and public recognition in one experience.</p>
+      </div>
+      <div class="hope-decision-copy">
+        <h3>What it unlocks</h3>
+        <p>The event becomes more than a one-off activation. It creates a platform for deeper ESG conversations, sponsorship pathways and follow-up communication that can extend beyond the physical event.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section" id="prototype">
+  <div class="wrap">
+    <div class="hope-section-head reveal">
+      <div><div class="eyebrow">04 / Prototype System</div><h2>A concept built across the full partner journey.</h2></div>
+      <p>The proposal was translated into a set of connected artefacts rather than a single event visual. The prototype system included the gala experience, partnership collateral, impact storytelling and post-event digital recognition.</p>
+    </div>
+    <div class="hope-proto-grid reveal">
+      <figure class="hope-media hero"><img src="../assets/projects/hopebox/gala-mockup.jpeg" alt="Running Toward Hope gala concept"><figcaption>Running Toward Hope · Mid-Year Impact Gala</figcaption></figure>
+      <figure class="hope-media half"><img src="../assets/projects/hopebox/brochure-front.jpeg" alt="HopeBox corporate partnership brochure front"><figcaption>Corporate partnership brochure · front</figcaption></figure>
+      <figure class="hope-media half"><img src="../assets/projects/hopebox/brochure-back.jpeg" alt="HopeBox corporate partnership brochure back"><figcaption>Corporate partnership brochure · back</figcaption></figure>
+      <figure class="hope-media third"><img src="../assets/projects/hopebox/invitation.jpeg" alt="HopeBox gala invitation"><figcaption>Event invitation</figcaption></figure>
+      <figure class="hope-media third"><img src="../assets/projects/hopebox/journey-infographic.jpeg" alt="Journey of HopeBox infographic"><figcaption>Impact storytelling infographic</figcaption></figure>
+      <figure class="hope-media third"><img src="../assets/projects/hopebox/linkedin-post.jpeg" alt="HopeBox gala LinkedIn recognition post"><figcaption>Post-event LinkedIn recognition</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section" id="testing">
+  <div class="wrap">
+    <div class="hope-section-head reveal">
+      <div><div class="eyebrow">05 / Testing Framework</div><h2>Test the idea before treating it as a solution.</h2></div>
+      <p>The final stage defined how the concept should be evaluated using three Design Thinking lenses. The framework connects audience response, financial sustainability and operational capacity to measurable indicators.</p>
+    </div>
+    <div class="hope-test-grid reveal">
+      <div class="hope-test"><div class="n">01</div><h3>Desirability</h3><p>RSVP intention, sponsor interest, storytelling response and audience feedback test whether the experience is meaningful enough to attract corporate and community engagement.</p></div>
+      <div class="hope-test"><div class="n">02</div><h3>Viability</h3><p>Sponsorship uptake, donation conversion, fundraising efficiency and repeat partnership interest test whether the concept can contribute to sustainable revenue.</p></div>
+      <div class="hope-test"><div class="n">03</div><h3>Feasibility</h3><p>Logistics, staff coordination, production requirements and low-resource digital follow-up test whether HopeBox can realistically deliver and repeat the model.</p></div>
+    </div>
+    <div class="hope-note reveal"><strong>Important:</strong> these are proposed evaluation measures from the project, not live campaign performance results.</div>
+  </div>
+</section>
+
+<section class="detail-section" id="files">
+  <div class="wrap">
+    <div class="hope-section-head reveal">
+      <div><div class="eyebrow">06 / Full Work</div><h2>Research, method and supporting evidence.</h2></div>
+      <p>The complete report contains the underlying business context, stakeholder analysis, Design Thinking process, solution development, prototype artefacts and testing framework.</p>
+    </div>
+    <div class="pdf-shell reveal">
+      <div class="pdf-head"><strong>Business Solution Design Report</strong><a href="../documents/hopebox-report.pdf" target="_blank">Open in new tab ↗</a></div>
+      <iframe class="pdf-viewer" loading="lazy" src="../documents/hopebox-report.pdf#view=FitH"></iframe>
+    </div>
+    <div class="pdf-shell reveal">
+      <div class="pdf-head"><strong>Original HopeBox Case Study</strong><a href="../documents/hopebox-case-study.pdf" target="_blank">Open in new tab ↗</a></div>
+      <iframe class="pdf-viewer" loading="lazy" src="../documents/hopebox-case-study.pdf#view=FitH"></iframe>
+    </div>
+    <a class="next-card reveal" href="gom-vi.html"><span class="eyebrow">Next project</span><strong>GOM VỊ ↗</strong></a>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">Nguyen Huyen Anh (Scarlett) · Digital Marketing Portfolio · 2026</div></footer>
+<script src="../script.js"></script>
+</body>
+</html>
