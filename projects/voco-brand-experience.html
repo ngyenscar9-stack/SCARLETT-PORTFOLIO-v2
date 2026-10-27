@@ -1,0 +1,1360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta
+    name="description"
+    content="voco Scenia Bay Nha Trang — AI-enabled brand experience case study by Scarlett Nguyen">
+
+  <title>voco Scenia Bay — Scarlett Nguyen</title>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    /* =====================================================
+       VOCO BRAND EXPERIENCE
+       Follows the GOM VỊ / Lịm portfolio system
+       ===================================================== */
+
+    .voco-gold {
+      color: #d4a514;
+    }
+
+    .voco-hero {
+      padding: 50px 0 62px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .voco-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .voco-hero h1 {
+      margin: 28px 0 18px;
+      font: 400 clamp(68px, 8vw, 120px)/.8 var(--display);
+      letter-spacing: -.06em;
+    }
+
+    .voco-hero h1 span {
+      display: block;
+      font-size: .48em;
+      line-height: 1.05;
+      margin-top: .28em;
+      color: #d4a514;
+      letter-spacing: -.035em;
+    }
+
+    .voco-hero-copy > p {
+      max-width: 680px;
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.78;
+      color: #c9c0b7;
+    }
+
+    .voco-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .voco-stat {
+      border: 1px solid var(--line);
+      padding: 17px;
+      min-height: 105px;
+    }
+
+    .voco-stat strong {
+      display: block;
+      margin-bottom: 8px;
+      font: 400 27px/1 var(--display);
+    }
+
+    .voco-stat span {
+      display: block;
+      font-size: 9px;
+      line-height: 1.55;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: #aaa198;
+    }
+
+    /* CSS visual instead of a privacy-risk report cover */
+
+    .voco-hero-visual {
+      border: 1px solid var(--line);
+      padding: 18px;
+      min-height: 530px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+
+      background:
+        radial-gradient(circle at 20% 10%, rgba(225,183,44,.19), transparent 35%),
+        #111;
+    }
+
+    .voco-concept {
+      position: relative;
+      overflow: hidden;
+
+      min-height: 490px;
+      padding: 26px;
+
+      border: 1px solid rgba(255,255,255,.14);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .voco-concept:first-child {
+      background:
+        linear-gradient(145deg, #e0b844 0%, #f4e7b3 48%, #d69e1c 100%);
+      color: #16130d;
+    }
+
+    .voco-concept:last-child {
+      background:
+        linear-gradient(145deg, #101827 0%, #17273d 55%, #b88916 145%);
+      color: white;
+    }
+
+    .voco-concept .number {
+      font: italic 400 41px/1 var(--display);
+    }
+
+    .voco-concept h3 {
+      margin: 0;
+      max-width: 8ch;
+
+      font: 400 39px/.95 var(--display);
+      letter-spacing: -.04em;
+    }
+
+    .voco-concept p {
+      margin: 16px 0 0;
+      font-size: 11px;
+      line-height: 1.65;
+    }
+
+    /* SECTION SYSTEM */
+
+    .voco-section-label {
+      font-size: 18px !important;
+      font-weight: 700;
+      letter-spacing: .18em !important;
+      margin-bottom: 16px !important;
+    }
+
+    .voco-title {
+      font-size: clamp(2.5rem, 5vw, 4.35rem) !important;
+      line-height: .95 !important;
+    }
+
+    /* Cards */
+
+    .voco-card {
+      border: 1px solid var(--line);
+      padding: 27px;
+    }
+
+    .voco-card h3 {
+      margin: 0 0 15px;
+      font: 400 31px/1.02 var(--display);
+    }
+
+    .voco-card p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #c7bfb6;
+    }
+
+    .voco-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    /* Two recommendation cards */
+
+    .voco-rec {
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .voco-rec-top {
+      min-height: 330px;
+      padding: 30px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .voco-rec:nth-child(1) .voco-rec-top {
+      background: linear-gradient(
+        145deg,
+        #e4bd48,
+        #f6ecc5
+      );
+
+      color: #18140d;
+    }
+
+    .voco-rec:nth-child(2) .voco-rec-top {
+      background: linear-gradient(
+        145deg,
+        #101725,
+        #1d304b
+      );
+
+      color: #fff;
+    }
+
+    .voco-rec-num {
+      font: italic 400 38px/1 var(--display);
+    }
+
+    .voco-rec-top h3 {
+      margin: auto 0 0;
+
+      font: 400 clamp(38px, 4vw, 55px)/.92 var(--display);
+      letter-spacing: -.045em;
+
+      max-width: 9ch;
+    }
+
+    .voco-rec-copy {
+      padding: 24px;
+    }
+
+    .voco-rec-copy p {
+      margin: 0 0 19px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #c7bfb6;
+    }
+
+    .voco-live-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 11px 15px;
+      border: 1px solid var(--line);
+
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    /* Combined logic */
+
+    .voco-combo {
+      margin-top: 28px;
+
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 18px;
+      align-items: center;
+
+      border: 1px solid var(--line);
+      padding: 30px;
+    }
+
+    .voco-combo strong {
+      display: block;
+
+      font: 400 29px/1.02 var(--display);
+      margin-bottom: 10px;
+    }
+
+    .voco-combo p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.72;
+      color: #aaa198;
+    }
+
+    .voco-plus {
+      font: 400 60px/1 var(--display);
+      color: #d4a514;
+    }
+
+    /* Implementation */
+
+    .voco-roadmap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 27px;
+    }
+
+    .voco-quarter {
+      border: 1px solid var(--line);
+      padding: 21px;
+      min-height: 235px;
+    }
+
+    .voco-quarter b {
+      display: block;
+
+      margin-bottom: 25px;
+
+      color: #d4a514;
+      font: italic 400 33px/1 var(--display);
+    }
+
+    .voco-quarter strong {
+      display: block;
+      margin-bottom: 10px;
+
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+    }
+
+    .voco-quarter span {
+      font-size: 11px;
+      line-height: 1.65;
+      color: #aaa198;
+    }
+
+    /* Roleplay */
+
+    .voco-video {
+      margin-top: 28px;
+      border: 1px solid var(--line);
+      padding: 12px;
+    }
+
+    .voco-video video {
+      display: block;
+      width: 100%;
+      max-height: 720px;
+      background: black;
+    }
+
+    .voco-video figcaption {
+      padding: 15px 6px 5px;
+    }
+
+    .voco-video figcaption strong {
+      display: block;
+
+      margin-bottom: 7px;
+
+      font: 400 25px/1 var(--display);
+    }
+
+    .voco-video figcaption span {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #aaa198;
+    }
+
+    /* Result */
+
+    .voco-result {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 22px;
+      margin-top: 28px;
+      align-items: start;
+    }
+
+    .voco-grade {
+      margin: 0;
+
+      border: 1px solid var(--line);
+      padding: 12px;
+
+      background: #f4efe6;
+    }
+
+    .voco-grade img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .voco-result-copy {
+      border: 1px solid var(--line);
+      padding: 29px;
+    }
+
+    .voco-result-copy strong {
+      display: block;
+
+      color: #d4a514;
+
+      font: 400 64px/.9 var(--display);
+      margin-bottom: 18px;
+    }
+
+    .voco-result-copy h3 {
+      margin: 0 0 14px;
+
+      font: 400 31px/1.02 var(--display);
+    }
+
+    .voco-result-copy p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #c7bfb6;
+    }
+
+    /* LIGHT MODE */
+
+    body[data-theme='light'] .voco-hero-copy > p,
+    body[data-theme='light'] .voco-card p,
+    body[data-theme='light'] .voco-rec-copy p,
+    body[data-theme='light'] .voco-result-copy p {
+      color: #4b433d;
+    }
+
+    body[data-theme='light'] .voco-stat,
+    body[data-theme='light'] .voco-card,
+    body[data-theme='light'] .voco-rec,
+    body[data-theme='light'] .voco-quarter,
+    body[data-theme='light'] .voco-video,
+    body[data-theme='light'] .voco-result-copy,
+    body[data-theme='light'] .voco-combo {
+      border-color: rgba(73,55,43,.30);
+      background: #fffaf3;
+    }
+
+    body[data-theme='light'] .voco-rec-copy p,
+    body[data-theme='light'] .voco-quarter span,
+    body[data-theme='light'] .voco-video figcaption span,
+    body[data-theme='light'] .voco-combo p {
+      color: #554c45;
+    }
+
+    @media(max-width:900px) {
+
+      .voco-hero-grid,
+      .voco-two,
+      .voco-result {
+        grid-template-columns: 1fr;
+      }
+
+      .voco-roadmap {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .voco-hero-visual {
+        min-height: 450px;
+      }
+
+      .voco-concept {
+        min-height: 410px;
+      }
+    }
+
+    @media(max-width:620px) {
+
+      .voco-hero-visual,
+      .voco-roadmap,
+      .voco-combo {
+        grid-template-columns: 1fr;
+      }
+
+      .voco-plus {
+        transform: rotate(90deg);
+        text-align: center;
+      }
+
+      .voco-section-label {
+        font-size: 15px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="noise"></div>
+
+<nav>
+  <div class="wrap nav">
+
+    <a class="brand" href="../index.html#top">
+      SCARLETT<b>°</b>
+    </a>
+
+    <div class="nav-right">
+
+      <div class="links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#recognition">Recognition</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+
+      <a
+        class="nav-cv"
+        href="../documents/scarlett-cv.pdf"
+        target="_blank">
+        CV ↓
+      </a>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Switch colour theme">
+
+        <span class="moon">☾</span>
+        <span class="sun">☀</span>
+
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="voco-hero">
+
+  <div class="wrap">
+
+    <a class="back" href="../index.html#work">
+      ← Back to selected work
+    </a>
+
+    <div class="voco-hero-grid reveal">
+
+      <div class="voco-hero-copy">
+
+        <div class="eyebrow">
+          Business Communications & Professional Practice · Team Leader · Sep 2026
+        </div>
+
+        <h1>
+          voco Scenia Bay
+          <span>AI Brand Experience.</span>
+        </h1>
+
+        <p>
+          A business improvement project exploring how
+          voco Scenia Bay Nha Trang could strengthen
+          brand awareness through two complementary
+          AI-enabled pre-arrival experiences:
+          personalised destination storytelling and an
+          interactive multilingual 360° hotel tour.
+        </p>
+
+        <div class="detail-meta">
+
+          <span class="tag">Brand Strategy</span>
+          <span class="tag">AI</span>
+          <span class="tag">Hospitality</span>
+          <span class="tag">Digital Experience</span>
+
+        </div>
+
+        <div class="voco-stats">
+
+          <div class="voco-stat">
+            <strong>80 / 100</strong>
+            <span>Assignment result</span>
+          </div>
+
+          <div class="voco-stat">
+            <strong>Team Leader</strong>
+            <span>Business Communications</span>
+          </div>
+
+          <div class="voco-stat">
+            <strong>2 concepts</strong>
+            <span>One strategic system</span>
+          </div>
+
+          <div class="voco-stat">
+            <strong>2 prototypes</strong>
+            <span>Live digital experiences</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="voco-hero-visual">
+
+        <div class="voco-concept">
+
+          <div class="number">01</div>
+
+          <div>
+
+            <h3>
+              If Nha Trang Had a Voice
+            </h3>
+
+            <p>
+              Personalised destination storytelling
+              designed to connect travel preferences,
+              Nha Trang and the voco brand.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="voco-concept">
+
+          <div class="number">02</div>
+
+          <div>
+
+            <h3>
+              360° Virtual Tour
+            </h3>
+
+            <p>
+              An interactive property experience
+              supported by multilingual AI narration.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STICKY CASE NAV -->
+
+<div class="case-nav">
+
+  <div class="wrap">
+
+    <a href="#problem">Problem</a>
+    <a href="#strategy">Strategy</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#implementation">Implementation</a>
+    <a href="#communication">Communication</a>
+    <a href="#result">Result</a>
+    <a href="#files">Files</a>
+
+  </div>
+
+</div>
+
+
+<!-- 01 -->
+
+<section
+  class="detail-section"
+  id="problem">
+
+  <div class="wrap">
+
+    <div class="detail-columns reveal">
+
+      <div>
+
+        <div class="eyebrow voco-section-label">
+          01 / BUSINESS CHALLENGE
+        </div>
+
+        <h2 class="voco-title">
+          A crowded category needed
+          <span class="voco-gold">
+            stronger memory.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          voco Scenia Bay Nha Trang operates in a
+          competitive coastal hotel market where
+          beachfront facilities, ocean views and
+          premium hospitality are increasingly easy
+          for travellers to compare.
+        </p>
+
+        <p>
+          The project focused on a brand-awareness
+          problem: making the voco name more
+          distinctive and creating a stronger
+          association between the hotel and the
+          Nha Trang experience.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="voco-two reveal">
+
+      <div class="voco-card">
+
+        <h3>
+          The brand problem
+        </h3>
+
+        <p>
+          Generic hotel content made it difficult
+          for a relatively new property to build
+          strong top-of-mind recognition against
+          established competitors.
+        </p>
+
+      </div>
+
+
+      <div class="voco-card">
+
+        <h3>
+          The opportunity
+        </h3>
+
+        <p>
+          Travellers increasingly use digital and
+          AI-supported touchpoints during destination
+          discovery, creating room for more memorable
+          pre-arrival brand experiences.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- 02 -->
+
+<section
+  class="detail-section"
+  id="strategy">
+
+  <div class="wrap">
+
+    <div class="detail-columns reveal">
+
+      <div>
+
+        <div class="eyebrow voco-section-label">
+          02 / STRATEGIC DIRECTION
+        </div>
+
+        <h2 class="voco-title">
+          Make Nha Trang
+          <span class="voco-gold">
+            easier to remember through voco.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          The selected direction uses AI
+          personalisation and immersive technology
+          to address two connected weaknesses:
+          low brand awareness and undifferentiated
+          digital content.
+        </p>
+
+        <p>
+          Instead of promoting another list of hotel
+          features, the strategy creates two
+          complementary experiences that strengthen
+          emotional engagement and tangible
+          understanding before arrival.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- 03 -->
+
+<section
+  class="detail-section"
+  id="experiences">
+
+  <div class="wrap">
+
+    <div class="detail-columns reveal">
+
+      <div>
+
+        <div class="eyebrow voco-section-label">
+          03 / TWO DIGITAL EXPERIENCES
+        </div>
+
+        <h2 class="voco-title">
+          Two ideas.
+          <span class="voco-gold">
+            One pre-arrival memory.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          The two recommendations were designed
+          to complement rather than replace each
+          other: one builds emotional and social
+          connection, while the other makes the
+          physical hotel experience easier to
+          understand before booking.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="voco-two reveal">
+
+      <!-- REC 1 -->
+
+      <article class="voco-rec">
+
+        <div class="voco-rec-top">
+
+          <div class="voco-rec-num">
+            01
+          </div>
+
+          <h3>
+            If Nha Trang Had a Voice
+          </h3>
+
+        </div>
+
+
+        <div class="voco-rec-copy">
+
+          <p>
+            A personalised destination storytelling
+            experience where travellers choose their
+            travel mood, companions and preferences.
+            The system then produces a shareable
+            “Your Nha Trang” digital postcard using
+            a controlled, brand-approved content
+            library.
+          </p>
+
+          <a
+            class="voco-live-link"
+            href="https://ngyenscar9-stack.github.io/voco-nhatrangvoice/"
+            target="_blank"
+            rel="noopener">
+
+            Open live prototype ↗
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- REC 2 -->
+
+      <article class="voco-rec">
+
+        <div class="voco-rec-top">
+
+          <div class="voco-rec-num">
+            02
+          </div>
+
+          <h3>
+            Interactive 360° Virtual Tour
+          </h3>
+
+        </div>
+
+
+        <div class="voco-rec-copy">
+
+          <p>
+            A web-based 360° property experience
+            supported by multilingual AI narration,
+            helping prospective guests explore the
+            hotel, understand distinctive spaces and
+            reduce language barriers before arrival.
+          </p>
+
+          <a
+            class="voco-live-link"
+            href="https://ngyenscar9-stack.github.io/voco-Scenia-Bay-Nha-Trang-360-degree-virtual-tour/"
+            target="_blank"
+            rel="noopener">
+
+            Open 360° experience ↗
+
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <div class="voco-combo reveal">
+
+      <div>
+
+        <strong>
+          Emotional memory
+        </strong>
+
+        <p>
+          Personalised storytelling connects the
+          destination to individual travel interests
+          and encourages sharing.
+        </p>
+
+      </div>
+
+      <div class="voco-plus">
+        +
+      </div>
+
+      <div>
+
+        <strong>
+          Tangible understanding
+        </strong>
+
+        <p>
+          The 360° tour makes hotel spaces and
+          distinctive features easier to understand
+          and compare before booking.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- 04 -->
+
+<section
+  class="detail-section"
+  id="implementation">
+
+  <div class="wrap">
+
+    <div class="detail-columns reveal">
+
+      <div>
+
+        <div class="eyebrow voco-section-label">
+          04 / IMPLEMENTATION
+        </div>
+
+        <h2 class="voco-title">
+          From concept to
+          <span class="voco-gold">
+            a 12-month rollout.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          The recommendations were developed with
+          implementation and feasibility in mind,
+          moving from content preparation and
+          production through launch, measurement
+          and optimisation.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="voco-roadmap reveal">
+
+      <div class="voco-quarter">
+
+        <b>Q1</b>
+
+        <strong>
+          Planning & Development
+        </strong>
+
+        <span>
+          Define segments, approve scripts and
+          content libraries, prepare the technical
+          build and production requirements.
+        </span>
+
+      </div>
+
+
+      <div class="voco-quarter">
+
+        <b>Q2</b>
+
+        <strong>
+          Production & Testing
+        </strong>
+
+        <span>
+          Produce destination assets, capture the
+          property experience and test both digital
+          concepts before launch.
+        </span>
+
+      </div>
+
+
+      <div class="voco-quarter">
+
+        <b>Q3</b>
+
+        <strong>
+          Launch & Promotion
+        </strong>
+
+        <span>
+          Launch the two experiences and connect
+          them to the hotel website, social content
+          and campaign touchpoints.
+        </span>
+
+      </div>
+
+
+      <div class="voco-quarter">
+
+        <b>Q4</b>
+
+        <strong>
+          Evaluation & Optimisation
+        </strong>
+
+        <span>
+          Monitor engagement, sharing, branded
+          search and commercial indicators, then
+          optimise the experience.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- 05 -->
+
+<section
+  class="detail-section"
+  id="communication">
+
+  <div class="wrap">
+
+    <div class="detail-columns reveal">
+
+      <div>
+
+        <div class="eyebrow voco-section-label">
+          05 / PROFESSIONAL COMMUNICATION
+        </div>
+
+        <h2 class="voco-title">
+          Strategy,
+          <span class="voco-gold">
+            then make it persuasive.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          Alongside the written Business Improvement
+          Report, the team translated the proposal
+          into a professional role-play presentation
+          designed to communicate the problem,
+          recommendations and strategic rationale
+          in a more engaging client-facing format.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <figure class="voco-video reveal">
+
+      <video
+        controls
+        playsinline
+        preload="metadata">
+
+        <source
+          src="../assets/projects/voco-brand/voco-roleplay.mp4"
+          type="video/mp4">
+
+        Your browser does not support the video tag.
+
+      </video>
+
+
+      <figcaption>
+
+        <strong>
+          Professional role-play presentation
+        </strong>
+
+        <span>
+          Turning the report recommendations into
+          a client-facing communication format.
+        </span>
+
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<!-- 06 -->
+
+<section
+  class="detail-section"
+  id="result">
+
+  <div class="wrap">
+
+    <div class="detail-columns reveal">
+
+      <div>
+
+        <div class="eyebrow voco-section-label">
+          06 / RESULT
+        </div>
+
+        <h2 class="voco-title">
+          Business improvement report.
+          <span class="voco-gold">
+            80 / 100.
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          The project combined strategic research,
+          brand positioning, AI-enabled experience
+          design, implementation planning and
+          professional communication into one
+          Business Communications assignment.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="voco-result reveal">
+
+      <figure class="voco-grade">
+
+        <img
+          src="../assets/projects/voco-brand/grade-80.jpg"
+          alt="Assignment result showing 80 out of 100">
+
+      </figure>
+
+
+      <div class="voco-result-copy">
+
+        <strong>
+          80 / 100
+        </strong>
+
+        <h3>
+          Business Improvement Report &
+          Professional Communication Reflection
+        </h3>
+
+        <p>
+          Team Leader · Business Communications
+          & Professional Practice · Semester B/2026.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- 07 -->
+
+<section
+  class="detail-section"
+  id="files">
+
+  <div class="wrap">
+
+    <div class="detail-columns reveal">
+
+      <div>
+
+        <div class="eyebrow voco-section-label">
+          07 / FULL WORK
+        </div>
+
+        <h2 class="voco-title">
+          Want the
+          <span class="voco-gold">
+            details?
+          </span>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          The full report contains the market and
+          customer strategy, SWOT and TOWS analysis,
+          recommendation rationale, implementation
+          roadmap, KPIs, feasibility analysis and
+          supporting appendices.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="pdf-shell reveal">
+
+      <div class="pdf-head">
+
+        <strong>
+          Business Improvement Report
+        </strong>
+
+        <a
+          href="../documents/voco-business-improvement.pdf"
+          target="_blank">
+
+          Open in new tab ↗
+
+        </a>
+
+      </div>
+
+
+      <iframe
+        class="pdf-viewer"
+        loading="lazy"
+        src="../documents/voco-business-improvement.pdf#view=FitH">
+      </iframe>
+
+    </div>
+
+
+    <a
+      class="next-card reveal"
+      href="gom-vi.html">
+
+      <span class="eyebrow">
+        Back to flagship work
+      </span>
+
+      <strong>
+        GOM VỊ ↗
+      </strong>
+
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="wrap">
+    Nguyen Huyen Anh (Scarlett) ·
+    Digital Marketing Portfolio · 2026
+  </div>
+
+</footer>
+
+
+<script src="../script.js"></script>
+
+</body>
+</html>
