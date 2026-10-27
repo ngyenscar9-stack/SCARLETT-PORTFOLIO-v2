@@ -666,3 +666,255 @@ body[data-theme='light'] .lim-proof{
 body[data-theme='light'] .lim-hero{
   border-bottom-color:rgba(84,61,44,.28);
 }
+
+
+/* =========================================================
+   PROJECT 05 — VOCO AI BRAND EXPERIENCE
+   FULL-WIDTH HOMEPAGE FEATURE CARD
+   ========================================================= */
+
+.voco-feature{
+  grid-column:1 / -1;
+
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+
+  min-height:470px;
+
+  border:1px solid var(--line);
+
+  overflow:hidden;
+}
+
+.voco-feature-art{
+  padding:28px;
+
+  min-height:470px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:
+    radial-gradient(circle at 18% 15%,
+      rgba(225,183,44,.22),
+      transparent 36%),
+    #101010;
+}
+
+.voco-feature-art-inner{
+  width:100%;
+
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:15px;
+
+  align-items:center;
+}
+
+.voco-mini-card{
+  min-height:340px;
+
+  padding:27px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  border:1px solid rgba(255,255,255,.17);
+}
+
+.voco-mini-card.gold{
+  background:
+    linear-gradient(
+      145deg,
+      #d8a916,
+      #f6ebba
+    );
+
+  color:#18140d;
+}
+
+.voco-mini-card.navy{
+  background:
+    linear-gradient(
+      145deg,
+      #101827,
+      #1e334f
+    );
+
+  color:white;
+}
+
+.voco-mini-card span{
+  font:italic 400 34px/1 var(--display);
+}
+
+.voco-mini-card strong{
+  display:block;
+
+  margin:auto 0 18px;
+
+  font:400 clamp(29px,3vw,43px)/.92 var(--display);
+
+  letter-spacing:-.04em;
+}
+
+.voco-mini-card small{
+  max-width:160px;
+
+  font-size:8px;
+  line-height:1.6;
+
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.voco-mini-plus{
+  color:#d3a414;
+
+  font:400 57px/1 var(--display);
+}
+
+.voco-feature-copy{
+  padding:43px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.voco-feature-copy .idx{
+  font-size:8px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  opacity:.64;
+}
+
+.voco-feature-copy h3{
+  margin:25px 0 0;
+
+  font:400 clamp(52px,5vw,78px)/.9 var(--display);
+
+  letter-spacing:-.05em;
+}
+
+.voco-feature-copy h4{
+  margin:9px 0 20px;
+
+  color:#d4a514;
+
+  font:italic 400 clamp(27px,3vw,41px)/1 var(--display);
+}
+
+.voco-feature-copy p{
+  margin:0;
+
+  max-width:590px;
+
+  font-size:14px;
+  line-height:1.75;
+}
+
+.voco-feature-copy .tags{
+  margin-top:22px;
+}
+
+.voco-feature-proof{
+  display:flex;
+  gap:30px;
+
+  margin-top:27px;
+  padding-top:18px;
+
+  border-top:1px solid var(--line);
+
+  font-size:8px;
+  line-height:1.5;
+
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.voco-feature-proof strong{
+  display:block;
+
+  margin-bottom:6px;
+
+  font:400 23px/1 var(--display);
+
+  text-transform:none;
+  letter-spacing:0;
+}
+
+.voco-feature .card-link{
+  margin-top:31px;
+}
+
+
+/* LIGHT MODE */
+
+body[data-theme='light'] .voco-feature{
+  background:#fffaf3;
+
+  border-color:
+    rgba(72,55,42,.28);
+}
+
+body[data-theme='light']
+.voco-feature-copy p{
+  color:#3f3833;
+}
+
+body[data-theme='light']
+.voco-feature-copy .idx{
+  color:#5c544e;
+  opacity:1;
+}
+
+body[data-theme='light']
+.voco-feature-proof{
+  border-color:
+    rgba(72,55,42,.25);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .voco-feature{
+    grid-template-columns:1fr;
+  }
+
+  .voco-feature-art{
+    min-height:400px;
+  }
+
+}
+
+@media(max-width:640px){
+
+  .voco-feature-art-inner{
+    grid-template-columns:1fr;
+  }
+
+  .voco-mini-plus{
+    text-align:center;
+    transform:rotate(90deg);
+  }
+
+  .voco-mini-card{
+    min-height:250px;
+  }
+
+  .voco-feature-copy{
+    padding:28px;
+  }
+
+  .voco-feature-proof{
+    flex-direction:column;
+    gap:15px;
+  }
+
+}
