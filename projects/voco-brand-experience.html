@@ -366,33 +366,76 @@
 
     /* Result */
 
-    .voco-result {
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 22px;
-      margin-top: 28px;
-      align-items: start;
-    }
+    .voco-result{
+  display:grid;
+  grid-template-columns:420px minmax(0,1fr);
+  gap:22px;
+  margin-top:30px;
+  align-items:stretch;
+}
 
-    .voco-grade {
-      margin: 0;
+.voco-grade{
+  margin:0;
+  border:1px solid var(--line);
+  padding:12px;
+  background:#f4efe6;
+}
 
-      border: 1px solid var(--line);
-      padding: 12px;
+.voco-grade-crop{
+  height:520px;
+  overflow:hidden;
+}
 
-      background: #f4efe6;
-    }
+.voco-grade-crop img{
+  width:100%;
+  height:auto;
+  display:block;
+  transform:scale(1.12);
+  transform-origin:top center;
+}
 
-    .voco-grade img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
+.voco-result-copy{
+  border:1px solid var(--line);
+  padding:34px 36px;
 
-    .voco-result-copy {
-      border: 1px solid var(--line);
-      padding: 29px;
-    }
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.voco-result-score{
+  color:#d4a514;
+  font:400 92px/.8 var(--display);
+  letter-spacing:-.05em;
+  margin-bottom:22px;
+}
+
+.voco-result-score span{
+  font-size:.48em;
+}
+
+.voco-result-label{
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  margin-bottom:10px;
+}
+
+.voco-result-copy h3{
+  margin:0 0 24px;
+  font:400 42px/.98 var(--display);
+  max-width:650px;
+}
+
+.voco-result-meta{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:auto;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+}
 
     .voco-result-copy strong {
       display: block;
@@ -1189,11 +1232,11 @@
         </div>
 
         <h2 class="voco-title">
-          Business improvement report.
-          <span class="voco-gold">
-            80 / 100.
-          </span>
-        </h2>
+  A strong result.
+  <span class="voco-gold">
+    80 / 100.
+  </span>
+</h2>
 
       </div>
 
@@ -1201,12 +1244,12 @@
       <div>
 
         <p>
-          The project combined strategic research,
-          brand positioning, AI-enabled experience
-          design, implementation planning and
-          professional communication into one
-          Business Communications assignment.
-        </p>
+  The final submission received 80/100,
+  bringing together brand strategy,
+  AI-enabled experience design,
+  implementation planning and
+  professional communication.
+</p>
 
       </div>
 
@@ -1215,34 +1258,59 @@
 
     <div class="voco-result reveal">
 
-      <figure class="voco-grade">
+  <figure class="voco-grade">
+    <div class="voco-grade-crop">
 
-        <img
-          src="../assets/projects/voco-brand/grade-80.jpg"
-          alt="Assignment result showing 80 out of 100">
+      <img
+        src="../assets/projects/voco-brand/grade-80.jpg"
+        alt="Assignment result showing 80 out of 100">
 
-      </figure>
+    </div>
+
+    <figcaption>
+      Assessment evidence · 80 / 100
+    </figcaption>
+  </figure>
 
 
-      <div class="voco-result-copy">
+  <div class="voco-result-copy">
 
-        <strong>
-          80 / 100
-        </strong>
+    <div class="voco-result-score">
+      80
+      <span>/ 100</span>
+    </div>
 
-        <h3>
-          Business Improvement Report &
-          Professional Communication Reflection
-        </h3>
+    <div class="voco-result-label">
+      Assignment 3
+    </div>
 
-        <p>
-          Team Leader · Business Communications
-          & Professional Practice · Semester B/2026.
-        </p>
+    <h3>
+      Business Improvement Report &
+      Professional Communication Reflection
+    </h3>
 
+    <div class="voco-result-meta">
+
+      <div>
+        <strong>Role</strong>
+        <span>Team Leader</span>
+      </div>
+
+      <div>
+        <strong>Course</strong>
+        <span>Business Communications & Professional Practice</span>
+      </div>
+
+      <div>
+        <strong>Semester</strong>
+        <span>B / 2026</span>
       </div>
 
     </div>
+
+  </div>
+
+</div>
 
   </div>
 
