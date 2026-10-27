@@ -41,7 +41,36 @@
 #results .scar-team-copy{padding:24px 28px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;}
 #results .scar-team-copy strong{font-size:1.15rem!important;margin-bottom:7px!important;}
 #results .scar-team-copy span{font-size:.82rem!important;line-height:1.5!important;opacity:.72!important;max-width:44ch!important;}
+/* ---------- LIGHT MODE CARD OUTLINES ---------- */
 
+body[data-theme='light'] #touchpoints .scar-touch-card,
+body[data-theme='light'] #activation .scar-booth-card,
+body[data-theme='light'] #activation .scar-side-card,
+body[data-theme='light'] #results .scar-proof-card,
+body[data-theme='light'] #results .scar-team-strip{
+  background:#fffaf3!important;
+  border:1px solid rgba(77,58,43,.42)!important;
+  box-shadow:0 5px 16px rgba(59,43,31,.045)!important;
+}
+
+
+/* divider between image and caption */
+
+body[data-theme='light'] #touchpoints .scar-touch-card figcaption,
+body[data-theme='light'] #activation figcaption,
+body[data-theme='light'] #results .scar-proof-card figcaption{
+  border-top:1px solid rgba(77,58,43,.24)!important;
+}
+
+
+/* readable supporting text */
+
+body[data-theme='light'] #touchpoints .scar-touch-card figcaption span,
+body[data-theme='light'] #results .scar-proof-card figcaption span,
+body[data-theme='light'] #results .scar-team-copy span{
+  color:#514941!important;
+  opacity:1!important;
+}
 @media (max-width:900px){
   #touchpoints .scar-touch-grid,#results .scar-proof-grid,#activation .scar-activation-grid{grid-template-columns:1fr!important;}
   #touchpoints .scar-touch-media,#results .scar-proof-media{height:260px!important;}
@@ -51,91 +80,8 @@
   #results .scar-team-strip{grid-template-columns:1fr!important;max-height:none!important;}
   #results .scar-team-strip .scar-team-media{height:260px!important;}
 }
-</style>/* =========================================================
-   LỊM — FORCE VISIBLE CARD / IMAGE OUTLINES
-   ========================================================= */
-
-/* DARK MODE — all visual cards */
-.lim-keyvisual,
-.lim-identity,
-.lim-media,
-.lim-proof,
-.lim-booth,
-.lim-team,
-.timelapse-card,
-#touchpoints figure,
-#activation figure,
-#results figure{
-  border:1px solid rgba(255,255,255,.18) !important;
-  background:rgba(255,255,255,.035) !important;
-  box-shadow:0 0 0 1px rgba(255,255,255,.015) !important;
-}
-
-
-/* Keep a little separation between image and caption */
-.lim-keyvisual figcaption,
-.lim-identity figcaption,
-.lim-media figcaption,
-.lim-proof figcaption,
-.lim-booth figcaption,
-.lim-team figcaption,
-.timelapse-card figcaption,
-#touchpoints figure figcaption,
-#activation figure figcaption,
-#results figure figcaption{
-  border-top:1px solid rgba(255,255,255,.12) !important;
-}
-
-
-/* =========================================================
-   LIGHT MODE — MUCH STRONGER OUTLINE
-   ========================================================= */
-
-body[data-theme='light'] .lim-keyvisual,
-body[data-theme='light'] .lim-identity,
-body[data-theme='light'] .lim-media,
-body[data-theme='light'] .lim-proof,
-body[data-theme='light'] .lim-booth,
-body[data-theme='light'] .lim-team,
-body[data-theme='light'] .timelapse-card,
-body[data-theme='light'] #touchpoints figure,
-body[data-theme='light'] #activation figure,
-body[data-theme='light'] #results figure{
-  background:#fffaf3 !important;
-
-  border:1px solid rgba(77,58,43,.42) !important;
-
-  box-shadow:
-    0 7px 20px rgba(59,43,31,.045) !important;
-}
-
-
-/* Caption divider in light mode */
-body[data-theme='light'] .lim-keyvisual figcaption,
-body[data-theme='light'] .lim-identity figcaption,
-body[data-theme='light'] .lim-media figcaption,
-body[data-theme='light'] .lim-proof figcaption,
-body[data-theme='light'] .lim-booth figcaption,
-body[data-theme='light'] .lim-team figcaption,
-body[data-theme='light'] .timelapse-card figcaption,
-body[data-theme='light'] #touchpoints figure figcaption,
-body[data-theme='light'] #activation figure figcaption,
-body[data-theme='light'] #results figure figcaption{
-  border-top:1px solid rgba(77,58,43,.28) !important;
-}
-
-
-/* Make supporting caption text readable in light mode */
-body[data-theme='light'] .lim-media figcaption span,
-body[data-theme='light'] .lim-proof figcaption span,
-body[data-theme='light'] .lim-booth figcaption span,
-body[data-theme='light'] .lim-team figcaption span,
-body[data-theme='light'] .timelapse-card figcaption span,
-body[data-theme='light'] #touchpoints figure figcaption,
-body[data-theme='light'] #activation figure figcaption{
-  color:#514941 !important;
-  opacity:1 !important;
-}</head><body><div class="noise"></div><nav><div class="wrap nav">
+</style>
+</head><body><div class="noise"></div><nav><div class="wrap nav">
 <a class="brand" href="../index.html#top">SCARLETT<b>°</b></a>
 <div class="nav-right"><div class="links"><a href="../index.html#about">About</a><a href="../index.html#work">Work</a><a href="../index.html#experience">Experience</a><a href="../index.html#recognition">Recognition</a><a href="../index.html#contact">Contact</a></div>
 <a class="nav-cv" href="../cv.html">CV ↓</a><button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme"><span class="moon">☾</span><span class="sun">☀</span></button></div></div></nav>
